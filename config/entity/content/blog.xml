@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="blog" manager="Content" uid="201">
+  <passport>
+    <title>Блог</title>
+  </passport>
+  
+  <structure>
+
+    <states>
+    </states>
+
+    <belongsto entity="admin" />
+    <hasmany entity="comment" />
+    <hasone entity="mainphoto" />
+
+    <field name="title"/>
+    <field name="uri"/>
+    <field name="text"/>
+
+
+      <field name="metadesc"/>
+      <field name="metakey"/>
+      <field name="metatitle"/>
+
+
+      <field name="created"/>
+    <field name="updated"/>
+    
+  </structure>
+
+  <defaultorder>
+    <by field="created" order="desc"/>
+  </defaultorder>
+
+  <admincolumns>
+    <column selector="title"/>
+    <column selector="uri"/>
+    <column selector="admin"/>
+  </admincolumns>
+
+  <options>
+    <aparam name="translit" value="legacytitle2uri"/>
+  </options>
+</entity>

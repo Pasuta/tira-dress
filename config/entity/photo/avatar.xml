@@ -1,0 +1,44 @@
+<?xml version='1.0' standalone='yes'?>
+
+<entity name="avatar" uid="409820012" manager="Photo">
+
+	<passport>
+		<title>Аватар</title>
+	</passport>
+	
+	<structure>
+		<field name="title" />
+		<field name="uri" />
+		<field name="ext" />
+		<field name="width" />
+		<field name="height" />
+		<field name="filesize" />
+		<field name="folder" />
+        <field name="base64image" />
+        <field name="base64data" />
+		<field name="thumbnail" />
+		<belongsto entity="user" />
+	</structure>
+
+	<mediaoptions>
+		<image name="image" size="400x400" crop="no" watermark="yes" />
+		<image name="thumbnail" size="150x150" crop="no" watermark="yes" />
+	</mediaoptions>
+	
+	<imagesettings>
+		<mainimage paradigm="S" hd="no" watermark="no">
+			<size eachside="400" />
+		</mainimage>
+		<previews paradigm="VE" watermark="no" hd="no" reframe="yes">
+			<size eachside="100" name="thumb" base64="yes" />
+		</previews>
+	</imagesettings>
+	
+	<options>
+		<aparam name="filenaming" value="auto" />
+		<aparam name="metadata" type="boolean" value="yes" />
+		<aparam name="titling" value="auto" /> <!-- // auto or original, or uuid // uri2title -->
+		<aparam name="directmanage" type="boolean" value="no" />
+	</options>
+	
+</entity>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="admin" manager="Content" uid="200">
+  <passport>
+    <title>Администратор</title>
+  </passport>
+  
+  <structure>
+
+    <states>
+    </states>
+
+    <field name="name"/>
+    <field name="created"/>
+    <field name="updated"/>
+
+    <hasone entity="avatar" />
+    <hasmany entity="blog" />
+
+  </structure>
+
+  <defaultorder>
+    <by field="created" order="desc"/>
+  </defaultorder>
+
+  <admincolumns>
+    <column selector="name"/>
+  </admincolumns>
+
+  <options>
+    <!--<aparam name="translit" value="legacytitle2uri"/>-->
+  </options>
+</entity>

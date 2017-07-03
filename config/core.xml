@@ -1,0 +1,111 @@
+<?xml version='1.0' standalone='yes'?>
+<core>
+
+	<ns>core</ns>
+
+	<section>
+		<name>some</name>
+		<title>Some section</title>
+		
+		<rx>
+			<range><int>10</int><int>20</int></range>
+			<title>Some range</title>
+		</rx>
+		<!--
+		<urnlist>
+			<urn>urn-news-1</urn><urn>urn-news-2</urn>
+			<title>Some urns list</title>
+		</urnlist>
+		-->
+		
+	</section>
+	
+	
+	<section>
+		<name>database</name>
+		<title>Database section</title>
+	
+		<abc><string>ABC</string></abc>
+	
+		<section>
+			<name>stores</name>
+			<persistent><option>yes</option></persistent>
+			<section>
+				<name>LDAP</name>
+				<struct>yes</struct>
+				<title>LDAP section</title>
+				<enabled>no</enabled>
+				<providedby>
+					<plugin>ldapaddressbook</plugin>
+				</providedby>
+				<server><char>localhost</char></server>
+				<password><char>qwerty</char></password>
+			</section>
+			<section>
+				<name>mysql</name>
+				<struct>yes</struct>
+				<title>MySQL section</title>
+				<enabled>yes</enabled>
+				<abc><string>ABC</string></abc>
+				<server><char>local</char></server>
+				<password><char>zxc</char></password>
+				<someparam>
+					<option>yes</option>
+					<title>Some param</title>
+				</someparam>
+			</section>
+		</section>
+		
+		<someparam>
+			<option>yes</option>
+			<title>Some param</title>
+		</someparam>
+		
+		<section>
+			<name>caches</name>
+			<section>
+				<name>c1</name>
+				<title>C1</title>
+				<server><char>lc</char></server>
+			</section>
+			<section>
+				<name>c2</name>
+				<title>C2</title>
+				<enabled>yes</enabled>
+				<server><char>mc</char></server>
+			</section>
+		</section>
+		
+	</section>
+	
+	
+	<section>
+		<name>oauth</name>
+		<title>
+			<string lang="en">OAuth Structs</string>
+			<string lang="ru">OAuth Структуры</string>
+		</title>
+		
+		<section>
+			<name>oauthproviders</name>
+			<section>
+				<name>facebook</name>
+				<title><string>Facebook</string></title>
+				<legacy><option>no</option></legacy>
+				<auth><url>/fbauth/url</url></auth>
+				<tokentrade><url>/fbtoken/url</url></tokentrade>
+			</section>
+			
+			<section>
+				<name>vk</name>
+				<title><string>Vkontakte</string></title>
+				<legacy><option>yes</option></legacy>
+				<auth><url>/vkauth/url</url></auth>
+				<tokentrade><url>/vktoken/url</url></tokentrade>
+			</section>
+		</section>
+		
+		
+	</section>
+			
+</core>

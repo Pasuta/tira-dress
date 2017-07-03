@@ -1,0 +1,162 @@
+/* БАЗОВЫЙ CSS */  
+
+html, body, div, p, ul, li, a, img {margin:0; padding:0; border:0;}   /* Сброс настроек броузера установленных по умолчанию */  
+
+* { 
+    margin: 0; 
+    padding: 0;
+    /* box-sizing: border-box; */
+  }
+
+body {
+   /*font-family: Helvetica ,Arial,sans-serif;*/
+   font-size: 1em;
+   /* font-size: 12px; */
+   line-height: 18px;
+   margin-top: 0;
+   }
+   /* li li, li p { font-size: 1em; } if base is 62.5%*/        
+
+/* Классы по умолчанию */  
+
+.FW {width: 100%;}
+
+.CW {width: 990px; margin-left: auto; margin-right: auto;}
+
+.CWq {width: 50%; margin:0 auto;}
+
+.CWP {
+	  max-width: 1024px;
+	  min-width: 990px;
+	  margin-left: auto;
+	  margin-right: auto;		
+     } 
+
+.hide {display: none !important;}
+
+.posrelative {position: relative;}
+.posabsolute {position: absolute;}
+
+.vam {vertical-align: middle;}
+
+.vat {vertical-align: top;}
+
+.FL {float: left;}
+.FR {float: right;} 
+
+.CP {cursor: pointer;}
+
+.nobold {font-weight: normal;} 
+
+.l-h {line-height:1.5;}
+
+/* Колоночная сетка (без отступов) */
+
+   .g1 { width: 55px; float: left; }
+   .g2 { width: 140px; float: left; }
+   .g3 { width: 225px; float: left; }
+   .g4 { width: 310px; float: left; }
+   .g5 { width: 395px; float: left; }
+   .g6 { width: 480px; float: left; }
+   .g7 { width: 565px; float: left; }
+   .g8 { width: 650px; float: left; }
+   .g9 { width: 735px; float: left; }
+   .gl0 { width: 820px; float: left; }
+   .gl1 { width: 905px; float: left; }
+   .gl2 { width: 990px; float: left; }
+
+	/* Размеры шрифтов */     
+
+	.FS10 { font-size: 10px; } 
+	.FS11 { font-size: 11px; } 
+	.FS12 { font-size: 12px; } 
+	.FS13 { font-size: 13px; } 
+	.FS14 { font-size: 14px; } 
+	.FS15 { font-size: 15px; }
+	.FS16 { font-size: 16px; }
+	.FS17 { font-size: 17px; }
+	.FS18 { font-size: 18px; }
+	.FS21 { font-size: 21px; }
+	.FS24 { font-size: 24px; }
+	.FS26 { font-size: 26px; }
+	.FS29 { font-size: 29px; }
+	.FS30 { font-size: 30px; }
+
+	/* Отступ снаружи блока (margin) */
+
+	.TM  { margin-top: 9px;  }
+	.TM1 { margin-top: 18px; padding-top: 0; }
+	.TM2 { margin-top: 36px; padding-top: 0; }
+	.TM3 { margin-top: 54px; padding-top: 0; }
+	.TM4 { margin-top: 72px; padding-top: 0; }
+	.TM5 { margin-top: 90px; padding-top: 0; }
+
+	.BM  { margin-bottom: 9px;  }
+	.BM1 { margin-bottom: 18px; padding-bottom: 0; }
+	.BM2 { margin-bottom: 36px; padding-bottom: 0; }
+	.BM3 { margin-bottom: 54px; padding-bottom: 0; }
+	.BM4 { margin-bottom: 72px; padding-bottom: 0; }
+	.BM5 { margin-bottom: 90px; padding-bottom: 0; } 
+	
+	.LM  { margin-left: 9px;  }
+	.LM1 { margin-left: 18px; padding-bottom: 0; }
+	.LM2 { margin-left: 36px; padding-bottom: 0; }
+	.LM3 { margin-left: 54px; padding-bottom: 0; }
+	.LM4 { margin-left: 72px; padding-bottom: 0; }
+	.LM5 { margin-left: 90px; padding-bottom: 0; }
+	
+	.RM  { margin-right: 9px;  }
+	.RM1 { margin-right: 18px; padding-bottom: 0; }
+	.RM2 { margin-right: 36px; padding-bottom: 0; }
+	.RM3 { margin-right: 54px; padding-bottom: 0; }
+	.RM4 { margin-right: 72px; padding-bottom: 0; }
+	.RM5 { margin-right: 90px; padding-bottom: 0; }
+
+	/* Отступ внутри блока (padding) */ 
+
+	.TP  { padding-top: 9px; }
+	.TP1 { padding-top: 18px; margin-top: 0; }
+	.TP2 { padding-top: 36px; margin-top: 0; }
+	.TP3 { padding-top: 54px; margin-top: 0; }
+	.TP4 { padding-top: 72px; margin-top: 0; }
+	.TP5 { padding-top: 90px; margin-top: 0; }
+
+.w{background-color: #ffffff;}
+.turquoese{ background-color: turquoise;}
+.emerald{ background-color:#2ECC71;}
+.peterriver{ background-color: #3498DB;}
+.amethyst{ background-color: #9B59B6;}
+.wetasphalt{ background-color: #34495E;}
+.greensea{ background-color: #0EA186;}
+.nephritis{ background-color: #20AF65;}
+.wisteria{ background-color:#8E44AD ;}
+.midnightblue{ background-color: #2C3E50;}
+.concrete{ background-color: #95A5A6;}
+.asbestos{ background-color: #7F8C8D;}
+.clouds{ background-color: #ECF0F1;}
+.silver{ background-color: #BDC3C7;}
+.alizarin{ background-color: #E84C3C;}
+.pomegranate{ background-color: #C1392B;}
+.carrot{ background-color: #E67F2A;}
+.pumpkin{ background-color: #D3540A;}
+.shampan{background-color: #EACF9A}
+
+.animated {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.animatedFast {
+    -webkit-transition-duration: 0.5s !important;
+    -moz-transition-duration: 0.5s !important;
+    -o-transition-duration: 0.5s !important;
+    -ms-transition-duration: 0.5s !important;
+    transition-duration: 0.5s !important;
+}
+	
+
+
+ 

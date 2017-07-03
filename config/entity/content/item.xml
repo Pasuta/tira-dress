@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="item" manager="Content" uid="202">
+  <passport>
+    <title>Товар</title>
+  </passport>
+  
+  <structure>
+
+    <states>
+        <status name="new" />
+        <status name="top" />
+        <status name="instaff" />
+        <status name="toorder" />
+        <status name="accessory" />
+    </states>
+
+    <field name="title"/>
+    <field name="uri"/>
+    <field name="price"/>
+    <field name="sizes"/>
+    <field name="countview"/>
+    <field name="text"/>
+    <field name="material"/>
+    <field name="rank"/>
+
+    <field name="metadesc"/>
+    <field name="metakey"/>
+    <field name="metatitle"/>
+
+    <field name="created"/>
+    <field name="updated"/>
+
+    <hasmany entity="comment" />
+    <hasmany entity="mainphoto" />
+    <hasone entity="mainphotov" />
+
+  </structure>
+
+  <defaultorder>
+    <by field="created" order="desc"/>
+  </defaultorder>
+
+  <admincolumns>
+    <column selector="onephoto"/>
+    <column selector="onephotov"/>
+    <column selector="title"/>
+    <column selector="uri"/>
+    <column selector="rank"/>
+    <column selector="id"/>
+    <column selector="price"/>
+  </admincolumns>
+
+  <options>
+    <aparam name="translit" value="legacytitle2uri"/>
+  </options>
+</entity>

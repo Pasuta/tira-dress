@@ -1,0 +1,44 @@
+<section>
+			<name>credentials</name>
+			<title>
+				<string lang="ru">Ключи OAuth приложений</string>
+			</title>
+			
+			<section>
+				<name>facebook</name>
+				<title><string>Facebook</string></title>
+				<appid><char>209685472505760</char></appid>
+				<appsecret><char>90077c2f4f6a1621166bed9c51bfcf0f</char></appsecret>
+				<scopes><char>email,user_birthday</char></scopes>
+			</section>
+			
+			<section>
+				<name>vk</name>
+				<title><string>Вконтакте</string></title>
+				<appid><char>3427051</char></appid>
+				<appsecret><char>PqmvS84ABXEne2qqLLCa</char></appsecret>
+				<scopes><char>notify,notifications</char></scopes>
+			</section>
+			
+			<section>
+				<name>yandex</name>
+				<title><string>Яндекс</string></title>
+				<appid><char>dac5f4690da34e21aab6170a0de13e5d</char></appid>
+				<appsecret><char>4de0d8c501e34c6aba6a7a9b3eda98ef</char></appsecret>
+			</section>
+			
+			<section>
+				<name>twitter</name>
+				<title><string>Twitter</string></title>
+				<appid><char>mrcqafaCwpPd0JMvdVqKw</char></appid>
+				<appsecret><char>OdRiRfVaepUs09JBxHrJf4KpBwktUmej9mS9gukIE</char></appsecret>
+			</section>
+			
+			<section>
+				<name>google</name>
+				<title><string>Google</string></title>
+				<appid><char>182607882554.apps.googleusercontent.com</char></appid>
+				<appsecret><char>w0S1EGnX139ISe1YlLFnoN--</char></appsecret>
+			</section>
+			
+		</section>

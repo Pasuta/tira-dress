@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="metadata" manager="Content" uid="1240">
+  <passport>
+    <title>Мета данные</title>
+  </passport>
+  
+  <structure>
+    <field name="url"/>
+
+    <field name="metadesc"/>
+    <field name="metakey"/>
+    <field name="metatitle"/>
+
+    <field name="created"/>
+    <field name="updated"/>
+
+  </structure>
+
+  <defaultorder>
+    <by field="created" order="desc"/>
+  </defaultorder>
+
+  <admincolumns>
+    <column selector="url"/>
+  </admincolumns>
+
+  <options>
+    <!--<aparam name="translit" value="legacytitle2uri"/>-->
+  </options>
+</entity>

@@ -1,0 +1,40 @@
+<?xml version='1.0' standalone='yes'?>
+
+<entity name="img" uid="496963" manager="Photo">
+
+    <passport>
+        <title>IMG</title>
+    </passport>
+
+    <structure>
+        <field name="title" />
+        <field name="uri" />
+        <field name="ext" />
+        <field name="width" />
+        <field name="height" />
+        <field name="filesize" />
+        <field name="folder" />
+        <field name="base64data" />
+        <field name="thumbnail" />
+        <belongsto entity="photo" />
+    </structure>
+
+    <imagesettings>
+        <mainimage paradigm="C" hd="no" watermark="no">
+            <size largestside="610" />
+        </mainimage>
+        <previews paradigm="C" watermark="no" hd="no" reframe="yes">
+            <size largestside="500" name="thumb" />
+            <size largestside="250" name="thumb2" base64="yes" />
+        </previews>
+    </imagesettings>
+
+
+    <options>
+        <aparam name="filenaming" value="auto" />
+        <aparam name="metadata" type="boolean" value="yes" />
+        <aparam name="titling" value="auto" /> <!-- // auto or original, or uuid // uri2title -->
+        <aparam name="directmanage" type="boolean" value="no" />
+    </options>
+
+</entity>

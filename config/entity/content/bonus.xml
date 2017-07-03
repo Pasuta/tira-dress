@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="bonus" manager="Content" uid="1203">
+  <passport>
+    <title>Бонус</title>
+  </passport>
+  
+  <structure>
+
+    <states>
+    </states>
+
+      <field name="name"/>
+      <field name="weddingdate"/>
+      <field name="dresscolor"/>
+      <field name="siluet"/>
+      <field name="dekor"/>
+      <field name="size"/>
+      <field name="fata"/>
+      <field name="ready"/>
+      <field name="email"/>
+      <field name="phone"/>
+
+    <field name="created"/>
+    <field name="updated"/>
+    
+  </structure>
+
+  <defaultorder>
+    <by field="created" order="desc"/>
+  </defaultorder>
+
+  <admincolumns>
+    <column selector="name"/>
+    <column selector="email"/>
+  </admincolumns>
+
+  <options>
+    <!--<aparam name="translit" value="legacytitle2uri"/>-->
+  </options>
+</entity>

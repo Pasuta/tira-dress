@@ -1,0 +1,25 @@
+<?xml version='1.0' standalone='yes'?>
+
+<entity name="category" uid="8" manager="Taxonomy">
+
+    <passport>
+        <title>Категория</title>
+    </passport>
+
+
+    <structure>
+
+
+    </structure>
+
+
+    <admincolumns>
+
+    </admincolumns>
+
+    <parameters>
+    </parameters>
+
+    <options>
+    </options>
+</entity>

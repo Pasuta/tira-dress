@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="review" manager="Content" uid="203">
+  <passport>
+    <title>Отзыв</title>
+  </passport>
+  
+  <structure>
+
+    <states>
+    </states>
+
+    <field name="text"/>
+    <field name="name"/>
+    <field name="created"/>
+    <field name="updated"/>
+    
+  </structure>
+
+  <defaultorder>
+    <by field="created" order="desc"/>
+  </defaultorder>
+
+  <admincolumns>
+    <column selector="name"/>
+    <column selector="date"/>
+  </admincolumns>
+
+  <options>
+    <!--<aparam name="translit" value="legacytitle2uri"/>-->
+  </options>
+</entity>

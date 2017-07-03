@@ -1,0 +1,107 @@
+<?xml version='1.0' standalone='yes'?>
+<core>
+
+    <ns>site</ns>
+
+    <!--
+    <section>
+        <name></name>
+        <title>
+            <string></string>
+        </title>
+
+    </section>
+    -->
+
+    <section>
+        <name>passport</name>
+        <title>
+            <string>Паспорт сайта</string>
+        </title>
+        <domain><char>local.organicstore.com</char></domain>
+        <usewww><option>no</option></usewww>
+        <sitetitle>
+            <string>organicstore</string>
+        </sitetitle>
+        <copyright>
+            <string>Attracti</string>
+        </copyright>
+    </section>
+
+    <section>
+        <name>env</name>
+        <title>
+            <string></string>
+        </title>
+
+        <current>
+            <chosen>
+                <names>
+                    <char>production</char>
+                </names>
+                <from>/core/env</from>
+            </chosen>
+            <title><string>Selected ENV</string></title>
+        </current>
+
+        <section>
+            <name>development</name>
+            <subdomain><char>local</char></subdomain>
+        </section>
+
+    </section>
+
+
+    <section>
+        <name>login</name>
+        <title>
+            <string lang="ru">Login</string>
+        </title>
+        <redirect><char>/</char></redirect>
+    </section>
+
+
+    <section>
+        <name>oauth</name>
+        <title>
+            <string lang="en">OAuth selected</string>
+            <string lang="ru">OAuth выбранные</string>
+        </title>
+
+        <providers>
+            <selected>
+                <names>
+                    <char>facebook</char>
+                </names>
+                <from>/model/oauth/providers</from>
+            </selected>
+            <title><string>Selected oauth providers from system list</string></title>
+        </providers>
+
+        <section>
+            <name>credentials</name>
+            <title>
+                <string lang="ru">Ключи OAuth приложений</string>
+            </title>
+
+            <section>
+                <name>facebook</name>
+                <title><string>Facebook</string></title>
+                <appid><char>1445883485677856</char></appid>
+                <appsecret><char>ec534b1ebae228e12ee3b1a9d2e113e1</char></appsecret>
+                <scopes><char>email</char></scopes>
+            </section>
+
+            <section>
+                <name>google</name>
+                <title><string>Google</string></title>
+                <appid><char>727981094752.apps.googleusercontent.com</char></appid>
+                <appsecret><char>zlDfkBbWih7DdBDtYEwBmhmW</char></appsecret>
+                <scopes><char>https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile</char></scopes>
+            </section>
+
+        </section>
+
+    </section>
+
+</core>

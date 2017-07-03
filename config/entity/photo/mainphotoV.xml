@@ -1,0 +1,42 @@
+<?xml version='1.0' standalone='yes'?>
+
+<entity name="mainphotov" uid="409820067" manager="Photo">
+
+	<passport>
+		<title>Вертикальное фото</title>
+	</passport>
+	
+	<structure>
+		<field name="title" />
+		<field name="uri" />
+		<field name="ext" />
+		<field name="width" />
+		<field name="height" />
+		<field name="filesize" />
+		<field name="folder" />
+        <field name="base64image" />
+        <field name="base64data" />
+		<field name="thumbnail" />
+		<belongsto entity="item" />
+		<belongsto entity="itemChildren" />
+		<!--<belongsto entity="blog" />-->
+	</structure>
+
+
+	<imagesettings>
+		<mainimage paradigm="VE" hd="no" watermark="no">
+			<size largestside="500" />
+		</mainimage>
+        <previews paradigm="VE" watermark="no" hd="no" reframe="yes">
+            <size vertical="347" name="thumb" base64="yes"/>
+        </previews>
+	</imagesettings>
+
+	<options>
+		<aparam name="filenaming" value="auto" />
+		<aparam name="metadata" type="boolean" value="yes" />
+		<aparam name="titling" value="auto" /> <!-- // auto or original, or uuid // uri2title -->
+		<aparam name="directmanage" type="boolean" value="no" />
+	</options>
+	
+</entity>

@@ -1,0 +1,227 @@
+/*@font-face {*/
+    /*font-family: 'Open_Sans';*/
+    /*src: url(/core/font/Open_Sans/OpenSans-Light.ttf);*/
+/*}*/
+body{
+    /*font-family: 'Open_Sans', sans-serif;*/
+    /*font-size: 15px;*/
+}
+h1,h2,h3,h4,h5,h6,form,body{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: darkgoldenrod;
+}
+.blogLink{
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+}
+.logoBlog{
+    display: inline-block;
+}
+.blogBigPhoto, .logoBlog{
+    position: relative;
+}
+.blogLink img, .blogBigPhoto img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.logoBlog img{
+    width: 200px;
+    margin-left: 50px;
+}
+
+.catalogLink div{
+    padding-left: 10px;
+    top:10px;
+    position: relative;
+}
+.blogLink div{
+    /*padding-left: 10px;*/
+    top:150px;
+    border-radius: 10px;
+    left: 20px;
+    position: absolute;
+    background: #ffffff;
+    padding: 5px;
+}
+.blogText{
+    line-height: 1.7em;
+}
+.headerLinks{}
+/*.headerLinks a:hover{*/
+    /*color: darkslategray;*/
+/*}*/
+.headerLinks a{
+    display: inline-block;
+    margin-left: 20px;
+}
+.search{
+
+}
+.search input[type=text]{
+    border: 1px solid silver;
+    display: block;
+    float: left;
+    padding: 3px;
+    width: 190px;
+}
+.search input[type=submit]{
+    float: left;
+    display: block;
+    background: silver;
+    border: 0;
+    padding: 4px;
+    cursor: pointer;
+}
+.socLinks{
+    float: right;
+}
+.socLinks a{
+    background: blue;
+    border-radius: 50px;
+    padding: 0 3px;
+    color: white;
+}
+.mainPopular{
+
+}
+.mainPopularSlider{
+    background: red;
+}
+.mainPopularSlider div:nth-child(1),.mainPopularSlider div:nth-child(3) {
+    background: orange;
+    width: 5%;
+    cursor: pointer;
+}
+.mainPopularSliderContent{
+    width: 90%;
+    background: gold;
+}
+.mainPopularSlider div{}
+.mainPopularSlider div{
+    float: left;
+    height: 90%;
+}
+.mainBlogLinks{
+
+}
+.mainBlogLinks a{
+    display: block;
+    margin-top: 10px;
+}
+.mainBlogLinks a div:nth-child(2){
+    float: right;
+}
+.mainBlogLinks a div:nth-child(1){
+    float: left;
+}
+
+.imgToAllSizes{
+    position: relative;
+    /*background: red;*/
+}
+.imgToAllSizes img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+.mainCatalogBtn{
+    margin-top: 480px;
+    padding: 10px 0 10px 0;
+}
+.badge{
+    border-radius: 50px;
+    width: 75px;
+    height: 75px;
+    z-index: 1000;
+    position: relative;
+    color: white;
+    text-align: center;
+    line-height: 4.5;
+    font-weight: lighter;
+    font-size: 18px;
+    right: -75%;
+}
+.badgeBlue{
+    background: #2C3E50;
+}
+.sliderHorizontal{
+    width: 620px;
+    position: relative;
+}
+.sliderFrame{
+    width: 620px;
+}
+.sliderHorizontal > .sliderArr{
+    background: #000000;
+    color: white;
+    text-align: center;
+    line-height: 20;
+    opacity: 0.6;
+    position: absolute;
+    z-index: 1000;
+    width: 5%;
+    height: 310px;
+    /*height: 100%;*/
+}
+.sliderHorizontal > .sliderArr:hover{
+    opacity: 0.8;
+}
+.sliderHorizontal > .sliderArr:nth-child(1){
+    left:0;
+}
+.sliderHorizontal > .sliderArr:nth-child(3){
+    right: 0;
+}
+.sliderContent{
+    position: relative;
+}
+.sliderFrame img{
+    width: 207px;
+    /*height: 100%;*/
+    height: 310px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.mainCatalogBtn{
+    text-align: center;
+    color: white;
+    /*background: #3498DB;*/
+    background: #2C3E50 !important;
+    opacity: 0.9;
+    text-transform: uppercase;
+}
+.mainCatalogBtn:hover{
+    background: black !important;
+    opacity: 0.8 !important;
+    color: white;
+}

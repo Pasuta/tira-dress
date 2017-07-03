@@ -1,0 +1,21 @@
+<?xml version='1.0' standalone='yes'?>
+
+<entity name="user">
+
+    <states>
+        <status name="coworker" />
+    </states>
+
+    <structure>
+        <belongsto entity="comment"/>
+        <belongsto entity="question" />
+
+
+    </structure>
+
+    <lists>
+        <list entity="product" ns="1722"    name="wishlist" title="wishlist" />
+        <list entity="product" ns="1721123" name="waitlist" title="waitlist" />
+    </lists>
+
+</entity>

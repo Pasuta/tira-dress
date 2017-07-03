@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="simplesubscription" manager="Mailing" uid="1210">
+    <passport>
+        <title>Email подписки</title>
+    </passport>
+
+    <states>
+        <status name="active" />
+    </states>
+
+    <structure>
+        <field name="email"/>
+        <field name="created"/>
+    </structure>
+    <lists/>
+    <defaultorder>
+        <by field="created" order="DESC"/>
+    </defaultorder>
+    <admincolumns>
+        <column selector="email"/>
+    </admincolumns>
+    <options/>
+    <searchfields/>
+    <indexes>
+        <index column="email"/>
+        <unique column="email"/>
+    </indexes>
+</entity>
