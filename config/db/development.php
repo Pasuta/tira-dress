@@ -1,5 +1,6 @@
 <?php
-$GLOBALS['CONFIG']['DEVELOPMENT']['DB']['HOST'] = '127.0.0.1';
+//$GLOBALS['CONFIG']['DEVELOPMENT']['DB']['HOST'] = '127.0.0.1';
+$GLOBALS['CONFIG']['DEVELOPMENT']['DB']['HOST'] = 'localhost';
 $GLOBALS['CONFIG']['DEVELOPMENT']['DB']['USER'] = 'whitebride';
 $GLOBALS['CONFIG']['DEVELOPMENT']['DB']['PASSWORD'] = 'wpGeiYZWt';
 $GLOBALS['CONFIG']['DEVELOPMENT']['DB']['DBNAME'] = 'whitebride';
