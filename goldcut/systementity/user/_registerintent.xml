@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="registerintent" manager="User" uid="99906">
+  <passport>
+    <title>register intent</title>
+  </passport>
+  <states/>
+  <structure>
+    <field name="email"/>
+    <field name="activationcode"/>
+    <field name="created"/>
+    <field name="emailssent"/>
+  </structure>
+  <lists/>
+  <defaultorder>
+    <by field="created" order="DESC"/>
+  </defaultorder>
+  <admincolumns/>
+  <options>
+    <aparam name="directmanage" type="boolean" value="no"/>
+  </options>
+  <searchfields/>
+  <indexes/>
+</entity>

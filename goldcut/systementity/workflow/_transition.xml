@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="transition" manager="Workflow" uid="1105">
+  <passport>
+    <title>Transition</title>
+  </passport>
+  <states>
+    <status name="startpoint"/>
+  </states>
+  <structure>
+    <belongsto entity="wfa"/>
+    <field name="taskfrom"/>
+    <field name="taskto"/>
+  </structure>
+  <lists/>
+  <defaultorder/>
+  <admincolumns/>
+  <options>
+    <aparam name="directmanage" type="boolean" value="no"/>
+  </options>
+  <searchfields/>
+  <indexes/>
+</entity>

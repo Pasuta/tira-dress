@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="file" manager="File" uid="5">
+  <passport>
+    <title>Файл</title>
+  </passport>
+  <states/>
+  <structure>
+    <field name="uri"/>
+    <field name="mediatype"/>
+    <field name="filesize"/>
+    <field name="created"/>
+  </structure>
+  <lists/>
+  <defaultorder/>
+  <admincolumns/>
+  <options>
+    <aparam name="directmanage" type="boolean" value="no"/>
+  </options>
+  <searchfields/>
+  <indexes/>
+</entity>

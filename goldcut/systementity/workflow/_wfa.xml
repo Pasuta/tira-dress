@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="wfa" manager="Workflow" uid="1103">
+  <passport>
+    <title>WorkFlow Abstract</title>
+  </passport>
+  <states/>
+  <structure>
+    <hasmany entity="task"/>
+    <hasmany entity="transition"/>
+    <field name="title"/>
+    <field name="created"/>
+  </structure>
+  <lists/>
+  <defaultorder>
+    <by field="created" order="ASC"/>
+  </defaultorder>
+  <admincolumns/>
+  <options>
+    <aparam name="directmanage" type="boolean" value="no"/>
+  </options>
+  <searchfields/>
+  <indexes/>
+</entity>

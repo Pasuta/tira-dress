@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="user_limits" manager="Limits" uid="2">
+  <passport>
+    <title>UserEntityLimits</title>
+  </passport>
+  <states/>
+  <structure>
+    <hasone entity="user"/>
+    <hasone entity="entity"/>
+    <field name="max"/>
+    <field name="used"/>
+  </structure>
+  <lists/>
+  <defaultorder/>
+  <admincolumns/>
+  <options>
+    <aparam name="directmanage" type="boolean" value="no"/>
+  </options>
+  <searchfields/>
+  <indexes/>
+</entity>

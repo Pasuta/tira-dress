@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="actiontype" manager="Taxonomy" uid="998001">
+  <passport>
+    <title>Тип действия</title>
+  </passport>
+  <states/>
+  <structure>
+    <field name="uri"/>
+    <field name="title"/>
+  </structure>
+  <lists/>
+  <defaultorder/>
+  <admincolumns>
+    <column selector="title"/>
+    <column selector="uri"/>
+  </admincolumns>
+  <options>
+    <aparam name="directmanage" type="boolean" value="no"/>
+  </options>
+  <searchfields/>
+  <indexes/>
+</entity>

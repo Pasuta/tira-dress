@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="mailtemplate" manager="Content" uid="121">
+  <passport>
+    <title>Шаблон письма</title>
+  </passport>
+
+    <international>
+        <!-- TODO add param ALL SITE LANGS -->
+        <language code="ru" />
+        <translations>
+            <language code="en" />
+        </translations>
+    </international>
+
+    <states/>
+
+  <structure>
+    <field name="title" role="international" />
+    <field name="uri"/>
+    <field name="mailhtml" role="international" />
+    <field name="fromname" role="international" />
+    <field name="fromemail"/>
+  </structure>
+  <lists/>
+  <defaultorder>
+    <by field="title" order="ASC"/>
+  </defaultorder>
+  <admincolumns>
+    <column selector="title"/>
+  </admincolumns>
+  <options>
+    <aparam name="directmanage" type="boolean" value="no"/>
+  </options>
+  <searchfields/>
+  <indexes/>
+</entity>

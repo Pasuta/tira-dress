@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="task" manager="Workflow" uid="1101">
+  <passport>
+    <title>Task</title>
+  </passport>
+  <states>
+    <status name="automated"/>
+  </states>
+  <structure>
+    <belongsto entity="wfa"/>
+    <field name="title"/>
+    <field name="timelimit"/>
+    <field name="created"/>
+  </structure>
+  <lists/>
+  <defaultorder>
+    <by field="created" order="ASC"/>
+  </defaultorder>
+  <admincolumns/>
+  <options>
+    <aparam name="directmanage" type="boolean" value="no"/>
+  </options>
+  <searchfields/>
+  <indexes/>
+</entity>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="oauth2session" manager="User" uid="99905">
+  <passport>
+    <title>oauth2Sessions</title>
+  </passport>
+  <states/>
+  <structure>
+    <belongsto entity="user"/>
+    <field name="oauth2service"/>
+    <field name="oauthaccesstoken"/>
+    <field name="oauthtokensecret"/>
+    <field name="created"/>
+    <field name="expire"/>
+  </structure>
+  <lists/>
+  <defaultorder>
+    <by field="created" order="DESC"/>
+  </defaultorder>
+  <admincolumns/>
+  <options>
+    <aparam name="directmanage" type="boolean" value="no"/>
+  </options>
+  <searchfields/>
+  <indexes>
+    <index column="oauth2service"/>
+  </indexes>
+</entity>

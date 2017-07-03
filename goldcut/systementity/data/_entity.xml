@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="entity" manager="Data" uid="1">
+  <passport>
+    <title>Entity</title>
+  </passport>
+  <states/>
+  <structure>
+    <field name="title"/>
+    <field name="uri"/>
+    <field name="price"/>
+  </structure>
+  <lists/>
+  <defaultorder/>
+  <admincolumns/>
+  <options>
+    <aparam name="directmanage" type="boolean" value="no"/>
+  </options>
+  <searchfields/>
+  <indexes/>
+</entity>

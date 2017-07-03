@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="role" manager="Role" uid="1000">
+  <passport>
+    <title>Роль</title>
+  </passport>
+  <states/>
+  <structure>
+    <field name="title"/>
+    <field name="homeuri"/>
+  </structure>
+  <lists>
+    <list name="delegatedto" entity="user" ns="24" reverse="actas" title="Пользователи"/>
+  </lists>
+  <defaultorder/>
+  <admincolumns>
+    <column selector="title"/>
+    <column selector="homeuri"/>
+    <column selector="delegatedto"/>
+  </admincolumns>
+  <options/>
+  <searchfields/>
+  <indexes>
+    <unique column="title"/>
+  </indexes>
+</entity>

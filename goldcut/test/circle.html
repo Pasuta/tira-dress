@@ -1,0 +1,103 @@
+<script>
+    /* -----------------------------------------
+     // Progress Bar (Canvas)
+     ----------------------------------------- */
+    var c = document.createElement('canvas'),
+            ctx		= c.getContext('2d'),
+            cw 		= c.width = 300,
+            ch 		= c.height = 300,
+            rand 	= function(a,b){return ~~((Math.random()*(b-a+1))+a);},
+            dToR 	= function(degrees){ return degrees * (Math.PI / 180); },
+
+            circle = {
+                x: (cw / 2),
+                y: (ch / 2),
+                radius: 110,
+                speed: 6,
+                rotation: 0,
+                angleStart: 270,
+                angleEnd: 180,
+                hue: 303,
+                thickness: 5,
+                blur: 25
+            },
+
+            updateCircle = function(){
+                if(circle.rotation < 360){ circle.rotation += circle.speed; }
+                else { circle.rotation = 0; }
+            },
+
+            renderCircle = function(){
+                ctx.save();
+                ctx.translate(circle.x, circle.y);
+                ctx.rotate(dToR(circle.rotation));
+                ctx.beginPath();
+                ctx.arc(0, 0, circle.radius, dToR(circle.angleStart), dToR(circle.angleEnd), true);
+                ctx.lineWidth 	= circle.thickness;
+                ctx.strokeStyle = gradient1;
+                ctx.stroke();
+                ctx.restore();
+            },
+
+            renderCircleBorder = function(){
+                ctx.save();
+                ctx.translate(circle.x, circle.y);
+                ctx.rotate(dToR(circle.rotation));
+                ctx.beginPath();
+                ctx.arc(0, 0, circle.radius + (circle.thickness/2), dToR(circle.angleStart), dToR(circle.angleEnd), true);
+                ctx.lineWidth 	= 1;
+                ctx.strokeStyle = gradient2;
+                ctx.stroke();
+                ctx.restore();
+            },
+
+            renderCircleFlare = function(){
+                ctx.save();
+                ctx.translate(circle.x, circle.y);
+                ctx.rotate(dToR(circle.rotation+165));
+                ctx.scale(1.5,1);
+                ctx.beginPath();
+                ctx.arc(0, circle.radius, 5, 0, Math.PI *2, false);
+                ctx.closePath();
+                var gradient4 = ctx.createRadialGradient(0, circle.radius, 0, 0, circle.radius, 5);
+                gradient4.addColorStop(0, 'hsla(30, 100%, 50%, .2)');
+                gradient4.addColorStop(1, 'hsla(30, 100%, 50%, 0)');
+                ctx.fillStyle = gradient4;
+                ctx.fill();
+                ctx.restore();
+            },
+
+            clear = function(){
+                ctx.globalCompositeOperation = 'destination-out';
+                ctx.fillStyle = 'rgba(17, 17, 17, .1)';
+                ctx.fillRect(0, 0, cw, ch);
+                ctx.globalCompositeOperation = 'lighter';
+            },
+
+            loop = function(){
+                clear();
+                updateCircle();
+                renderCircle();
+                renderCircleBorder();
+                renderCircleFlare();
+            }
+
+    ctx.shadowBlur 	= circle.blur;
+    ctx.shadowColor = 'hsla('+circle.hue+', 80%, 60%, 1)';
+    ctx.lineCap 	= 'round';
+
+    var gradient1 = ctx.createLinearGradient(0, -circle.radius, 0, circle.radius);
+    gradient1.addColorStop(0, 'hsla('+circle.hue+', 23%, 62%, 0.5)');
+    gradient1.addColorStop(1, 'hsla('+circle.hue+', 60%, 50%, 0)');
+
+    var gradient2 = ctx.createLinearGradient(0, -circle.radius, 0, circle.radius);
+    gradient2.addColorStop(0, 'hsla('+circle.hue+', 100%, 50%, 0)');
+    gradient2.addColorStop(.1, 'hsla('+circle.hue+', 100%, 100%, .25)');
+    gradient2.addColorStop(1, 'hsla('+circle.hue+', 100%, 50%, 0)');
+
+    setInterval(loop, 12);
+
+    $('.player').prepend(c);
+    $(c).addClass('progress').hide();
+
+    </script>

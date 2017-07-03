@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="longtransaction" manager="Payments" uid="71">
+  <passport>
+    <title>Long Transaction</title>
+  </passport>
+  <states>
+    <status name="autocloseinvoice"/>
+    <status name="payed"/>
+  </states>
+  <structure>
+    <hasone entity="invoice"/>
+    <belongsto entity="user"/>
+    <field name="paymentgateway"/>
+    <field name="maxage"/>
+    <field name="created"/>
+    <field name="payedat"/>
+    <field name="openedamount"/>
+    <field name="openedcurr"/>
+    <field name="closedamount"/>
+    <field name="closedcurr"/>
+    <field name="remoteid"/>
+    <field name="ip"/>
+    <field name="phoneverified"/>
+    <field name="phoneprovided"/>
+  </structure>
+  <lists/>
+  <defaultorder>
+    <by field="created" order="DESC"/>
+  </defaultorder>
+  <admincolumns>
+    <column selector="user"/>
+    <column selector="paymentgateway"/>
+    <column selector="openedamount"/>
+    <column selector="phoneverified"/>
+    <column selector="date"/>
+    <column selector="time"/>
+    <column selector="id"/>
+  </admincolumns>
+  <options>
+    <aparam name="directmanage" type="boolean" value="no"/>
+  </options>
+  <searchfields/>
+  <indexes/>
+</entity>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="oauth2link" manager="User" uid="99904">
+  <passport>
+    <title>oauth2Links</title>
+  </passport>
+  <states/>
+  <structure>
+    <belongsto entity="user"/>
+    <field name="userid64"/>
+    <field name="oauth2service"/>
+  </structure>
+  <lists/>
+  <defaultorder>
+    <by field="created" order="DESC"/>
+  </defaultorder>
+  <admincolumns/>
+  <options>
+    <aparam name="directmanage" type="boolean" value="no"/>
+  </options>
+  <searchfields/>
+  <indexes>
+    <index column="oauth2service"/>
+  </indexes>
+</entity>

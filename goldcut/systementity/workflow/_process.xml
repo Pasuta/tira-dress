@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="process" manager="Workflow" uid="1104">
+  <passport>
+    <title>Process</title>
+  </passport>
+  <states>
+    <status name="active"/>
+  </states>
+  <structure>
+    <belongsto entity="task"/>
+    <belongsto entity="contract"/>
+    <belongsto entity="wfa"/>
+    <field name="created"/>
+  </structure>
+  <lists/>
+  <defaultorder>
+    <by field="created" order="ASC"/>
+  </defaultorder>
+  <admincolumns/>
+  <options>
+    <aparam name="directmanage" type="boolean" value="no"/>
+  </options>
+  <searchfields/>
+  <indexes/>
+</entity>

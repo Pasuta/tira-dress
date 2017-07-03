@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="photo" manager="Photo" uid="499">
+  <passport>
+    <title>Фото оригинал</title>
+  </passport>
+  <states/>
+  <structure>
+    <belongsto entity="file"/>
+    <field name="title"/>
+    <field name="uri"/>
+    <field name="ext"/>
+    <field name="width"/>
+    <field name="height"/>
+    <field name="filesize"/>
+    <field name="created"/>
+    <field name="facecount"/>
+    <field name="facelist"/>
+  </structure>
+  <lists/>
+
+	<imagesettings>
+        <mainimage paradigm="C" hd="no" watermark="no">
+            <size largestside="200" />
+        </mainimage>
+        <previews paradigm="C" watermark="no" hd="no" reframe="yes">
+            <size largestside="100" name="thumb" base64="yes" />
+        </previews>
+    </imagesettings>
+
+  <defaultorder/>
+  <admincolumns/>
+  <options>
+    <aparam name="directmanage" type="boolean" value="no"/>
+    <aparam name="filenaming" value=""/>
+    <aparam name="titling" value=""/>
+  </options>
+  <searchfields/>
+  <indexes/>
+</entity>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="invoice" manager="Payments" uid="70">
+  <passport>
+    <title>Invoice</title>
+  </passport>
+  <states>
+    <status name="payed"/>
+  </states>
+  <structure>
+    <belongsto entity="user"/>
+    <field name="amount"/>
+    <field name="total"/>
+    <field name="created"/>
+    <field name="payedat"/>
+    <field name="mqname"/>
+    <field name="urnlink"/>
+    <field name="targetuser"/>
+    <field name="units"/>
+    <field name="subject"/>
+    <field name="uri"/>
+  </structure>
+  <lists/>
+  <defaultorder/>
+  <admincolumns/>
+  <options>
+    <aparam name="directmanage" type="boolean" value="no"/>
+  </options>
+  <searchfields/>
+  <indexes/>
+</entity>

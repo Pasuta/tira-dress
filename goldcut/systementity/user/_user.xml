@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="user" manager="User" uid="99901">
+  <passport>
+    <title>Пользователь</title>
+  </passport>
+  <states>
+    <status name="active"/>
+  </states>
+  <structure>
+    <hasone entity="avatar"/>
+    <hasmany entity="oauth2link"/>
+    <hasmany entity="oauth2session"/>
+    <field name="email"/>
+    <field name="phone"/>
+    <field name="dynamicsalt"/>
+    <field name="password"/>
+    <field name="name"/>
+    <field name="wallet"/>
+    <field name="created"/>
+    <field name="lastlogin"/>
+    <field name="prefs"/>
+    <useone entity="role"/>
+  </structure>
+  <lists>
+    <list name="actas" entity="role" ns="42" reverse="delegatedto" title="Делегированные роли"/>
+  </lists>
+  <defaultorder>
+    <by field="created" order="DESC"/>
+  </defaultorder>
+  <admincolumns>
+    <column selector="name"/>
+    <column selector="email"/>
+    <column selector="date"/>
+    <column selector="time"/>
+    <column selector="wallet"/>
+    <column selector="actas"/>
+    <column selector="prefs"/>
+  </admincolumns>
+  <options/>
+  <searchfields/>
+  <indexes>
+    <unique column="email"/>
+  </indexes>
+</entity>

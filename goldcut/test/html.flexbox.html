@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>GOLDCUT FileAPI, XHR2 ajax file uploading v2</title>
+    <link rel='stylesheet' type='text/css' href='/goldcut/assets/css/normalize.css' media='screen' />
+    <!--    <link rel='stylesheet' type='text/css' href='/css/screen.css' media='screen' />-->
+    <link rel='stylesheet' type='text/css' href='/goldcut/assets/css/gcgrid.css' media='screen' />
+    <link rel='stylesheet' type='text/css' href='/goldcut/assets/css/gcform.css' media='screen' />
+    <script type="text/javascript" src="/goldcut/js/gcdom.js"></script>
+    <script type="text/javascript" src="/goldcut/js/screen.js"></script>
+    <script type="text/javascript" src="/goldcut/js/gcfileupload.js"></script>
+    <script>
+
+    </script>
+    <style>
+        body {
+            padding: 10px;
+        }
+        ul.nav {
+        }
+        .nav li {
+            background: #f0f0f0;
+            border: 1px solid gray;
+            border-right: none;
+            text-align: center;
+            line-height: 30px;
+        }
+        .nav li:nth-child(1)
+        {
+        }
+        .nav li:first-child
+        {
+            background: white;
+        }
+        .nav li:last-child
+        {
+            border-right: 1px solid gray;
+            background: white;
+        }
+
+        ul.xflex {
+            width: 100%;
+            display: -ms-flexbox;
+            -ms-box-orient: horizontal;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: flex;
+
+            -webkit-flex-flow: row wrap;
+            -moz-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        ul.xflex li {
+            -webkit-box-flex:1;
+            -webkit-flex:1;
+            flex: 1;
+        }
+        ul.xflex li a {
+            display: block;
+        }
+
+        ul.table {
+            width: 100%;
+            display: table;
+            table-layout: auto;
+            white-space: nowrap;
+        }
+        ul.table li {
+            display: table-cell;
+        }
+
+        ul.flex{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        ul.flex li {
+            display: block;
+            flex-grow: 1;
+            -ms-flex: 1
+        }
+
+        .menu
+        {
+            background:#ccc;
+            list-style:none;
+            font-family:sans-serif;
+            margin:0;
+            padding:0;
+
+            display: -ms-flexbox;
+            -ms-box-orient: horizontal;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display:flex;
+
+            flex-direction:row;
+        }
+
+        .menu li
+        {
+            text-align:center;
+            background:#000;
+            color:white;
+            display:block;
+            margin:0;
+            padding:8px 10px;
+            border:1px red solid;
+            text-overflow:ellipsis;
+            overflow:hidden;
+
+            flex-basis:10px;
+
+            -webkit-box-flex: 1 1 auto;
+            -webkit-flex: 1 1 auto;
+            flex: 1 1 auto;
+        }
+        .menu li:hover {
+            background: yellow;
+        }
+        .menu li a {
+            display: block;
+        }
+        .menu li a:hover {
+            background: #fefefe;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+
+    table
+    <ul class="nav table">
+        <li><a href="">Item 1</a></li>
+        <li><a href="">Item 2 very big</a></li>
+        <li><a href="">Item 3 big</a></li>
+        <li><a href="">Item 4</a></li>
+        <li><a href="">Item 5</a></li>
+        <li><a href="">Item 6</a></li>
+        <li><a href="">Item 7</a></li>
+    </ul>
+
+    flex
+    <ul class="nav xflex">
+        <li><a href="">Item 1</a></li>
+        <li><a href="">Item 2 very big</a></li>
+        <li><a href="">Item 3 big</a></li>
+        <li><a href="">Item 4</a></li>
+        <li><a href="">Item 5</a></li>
+        <li><a href="">Item 6</a></li>
+        <li><a href="">Item 7</a></li>
+    </ul>
+
+    <br>
+
+    flexbase
+    <div style="width: 500px">
+        <ul class="menu">
+            <li>AAAA</li>
+            <li>AAAAAAAAAAAAA</li>
+            <li>AAAAAAA</li>
+            <li>AAAAAAAAAAA</li>
+            <li>AAAAAAA</li>
+            <li>AAAAAAAAAAAAAAAA</li>
+        </ul>
+    </div>
+    <br>
+    <div style="width: 600px">
+        <ul class="menu">
+            <li>AAAA</li>
+            <li>AAAAAAAAAAAAA</li>
+            <li>AAAAAAA</li>
+            <li>AAAAAAAAAAA</li>
+            <li>AAAAAAA</li>
+            <li>AAAAAAAAAAAAAAAA</li>
+        </ul>
+    </div>
+    <br>
+    <div style="width: 700px">
+        <ul class="menu">
+            <li><a href="#">AAAA</a></li>
+            <li>AAAAAAAAAAAAA</li>
+            <li>AAAAAAA</li>
+            <li>AAAAAAAAAAA</li>
+            <li>AAAAAAA</li>
+            <li>AAAAAAAAAAAAAAAA</li>
+        </ul>
+    </div>
+    <br>
+    <ul class="menu">
+        <li><a href="#">AAAA</a></li>
+        <li>AAAAAAAAAAAAA</li>
+        <li>AAAAAAA</li>
+        <li>AAAAAAAAAAA</li>
+        <li>AAAAAAA</li>
+        <li>AAAAAAAAAAAAAAAA</li>
+    </ul>
+
+    <br>
+    <br>
+
+    <pre>
+        http://www.sitepoint.com/flexbox-css-flexible-box-layout/
+
+        http://www.xoogu.com/2013/justified-horizontal-menu-css-javascript-solutions/
+        http://dev.opera.com/articles/view/flexbox-basics/
+        http://css-tricks.com/snippets/css/a-guide-to-flexbox/
+        http://benfrain.com/understanding-the-css3-flexbox-flexible-box-layout-module/
+        http://dev.opera.com/articles/view/advanced-cross-browser-flexbox/#fallbacks
+        http://coding.smashingmagazine.com/2013/05/22/centering-elements-with-flexbox/
+        http://code.tutsplus.com/tutorials/an-introduction-to-css-flexbox--net-25655
+        http://www.broken-links.com/2011/08/31/three-practical-uses-for-flexbox/
+        http://www.sketchingwithcss.com/samplechapter/
+    </pre>
+
+</div>
+
+
+</body>
+</html>

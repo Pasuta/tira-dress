@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="actionrecord" manager="Records" uid="998002">
+  <passport>
+    <title>Журнал действий</title>
+  </passport>
+  <states/>
+  <structure>
+    <hasone entity="user"/>
+    <belongsto entity="actiontype"/>
+    <field name="created"/>
+    <field name="urnlink"/>
+  </structure>
+  <lists/>
+  <defaultorder/>
+  <admincolumns/>
+  <options>
+    <aparam name="directmanage" type="boolean" value="no"/>
+  </options>
+  <searchfields/>
+  <indexes/>
+</entity>

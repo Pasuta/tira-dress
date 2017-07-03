@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity name="online" manager="User" uid="99902">
+  <passport>
+    <title>Сессия онлайн</title>
+  </passport>
+  <states/>
+  <structure>
+    <hasone entity="user"/>
+    <field name="securehash"/>
+    <field name="hash"/>
+    <field name="renewhash"/>
+    <field name="ip"/>
+    <field name="created"/>
+  </structure>
+  <lists/>
+  <defaultorder>
+    <by field="created" order="DESC"/>
+  </defaultorder>
+  <admincolumns/>
+  <options>
+    <aparam name="directmanage" type="boolean" value="no"/>
+  </options>
+  <searchfields/>
+  <indexes>
+    <unique column="hash"/>
+  </indexes>
+</entity>
