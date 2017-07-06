@@ -43,9 +43,10 @@
             <div class="col-md-12 single-top-in">
                 <div class="span_2_of_a1 simpleCart_shelfItem">
                     <h3><?=$item->title?></h3>
-                    <p class="in-para"> <?=$item->material?></p>
+                    <?if($item->material){ ?> <p class="in-para"> <?=$item->material?></p><?}?>
                     <div class="price_single">
-                        <span class="reducedfrom item_price"><?=$item->price?> у.е.</span>
+<!--                        <span class="reducedfrom item_price">--><?//=$item->price?><!-- у.е.</span>-->
+                        <span class="reducedfrom item_price">Цену уточняйте по телефону</span>
                         <div class="clearfix"></div>
                     </div>
                     <h4 class="quick">Краткое описание:</h4>
@@ -57,8 +58,9 @@
                     <div class="wish-list">
                         <div class="stars">
                             <?
+                            $rank = $item->rank ? $item->rank : 5;
                             for($i=1; $i<=5; $i++){
-                                if($i <= $item->rank){
+                                if($i <= $rank){
                                     echo "<span style='background: url(/img/star.svg) 50% 50% no-repeat;background-size: cover'></span>";
                                 } else {
                                     echo "<span style='background: url(/img/star_cover.svg) 50% 50% no-repeat;background-size: cover'></span>";

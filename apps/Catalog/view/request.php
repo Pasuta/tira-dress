@@ -25,8 +25,8 @@
                                     <img src='{$src}' alt='project {$i}' style='height: 450px'>
                                 </a>
                                 <br>
-                                <p style='color:black'>{$i->title}</p>
-                                <p style='color:black'>{$i->price} у.е.</p>
+                                <p style='color:black; text-transform: capitalize'>{$i->title}</p>
+                                <p style='color:black'>Цену уточняйте по телефону</p>
                             </div>
                         </li>";
                 }

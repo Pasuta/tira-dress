@@ -111,48 +111,6 @@ extract($this->context);
             <a href="/catalog">Перейти ко всем коллекциям</a>
         </div>
         <div id="single-project">
-            <?
-            $j = 0;
-            $slidingDivx = '';
-            foreach($last6 as $z) {
-                $j++;
-                if ($j != 1) $slidingDivx = $j;
-                $m = new Message();
-                $m->action = 'load';
-                $m->urn = $z['urn'];
-                $z = $m->deliver();
-                if($z->mainphotov){
-                    $src = $z->mainphotov->thumb->uri;
-                    echo "
-                        <div id='slidingDiv{$slidingDivx}' class='toggleDiv row-fluid single-project'>
-                            <div class='span6'>
-                                <img src='{$src}' alt='project {$j}' />
-                            </div>
-                            <div class='span6'>
-                                <div class='project-description'>
-                                    <div class='project-title clearfix'>
-                                        <h3>{$z->title}</h3>
-                                        <span class='show_hide close'>
-                                            <i class='icon-cancel'></i>
-                                        </span>
-                                    </div>
-                                    <div class='project-info'>
-                                        <div>
-                                            <span>Материал: </span>
-                                            <p><b>{$z->material}</b></p>
-                                        </div>
-                                        <div>
-                                            <span>Цена: </span>
-                                            <p><b>{$z->price} у.е.</b></p>
-                                        </div>
-                                    </div>
-                                    <p><a href='/catalog/{$z->uri}' >Подробнее</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        ";
-                }
-            }?>
             <ul id="portfolio-grid" class="thumbnails row">
                 <?
                 $i = 0;
@@ -173,8 +131,8 @@ extract($this->context);
                                             <img src='{$src}' alt='project {$i}'>
                                         </a>
                                         <br>
-                                        <p style='color:black'>{$o->title}</p>
-                                        <p style='color:black'>{$o->price} у.е.</p>
+                                        <p style='color:black;text-transform: capitalize'>{$o->title}</p>
+                                        <p style='color:black'>Цену уточняйте по телефону</p>
                                     </div>
                                 </li>
                                 ";
