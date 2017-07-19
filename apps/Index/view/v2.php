@@ -154,7 +154,7 @@ extract($this->context);
         <div class="row-fluid team">
             <div class="span6" id="first-person">
                 <div class="thumbnail" style='background: #b90077'>
-                    <img src="/public/images/g/t1.jpg" alt="team 1">
+                    <img src="/public/images/g/tn1.jpg" alt="team 1">
                     <h3>Татьяна Ковальчук</h3>
                     <ul class="social">
                         <li>
