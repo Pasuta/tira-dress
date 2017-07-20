@@ -356,6 +356,9 @@ extract($this->context);
                             <li>
                                 <a class="mIc g-icon" href="https://plus.google.com/117015844931846090909"></a>
                             </li>
+                            <li>
+                                <a class="mIc fb-icon" href="https://www.facebook.com/tirashowroom/"></a>
+                            </li>
                         </ul>
                     </div>
                 </div>

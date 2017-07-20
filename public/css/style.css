@@ -921,6 +921,10 @@ p {
     background: url("/public/images/ico/80-google-plus-512.png") 50% 50% no-repeat;
     background-size: cover;
 }
+.fb-icon{
+    background: url("/public/images/ico/fbL.jpg") 50% 50% no-repeat;
+    background-size: cover;
+}
 
 .toast{
     display: none;
