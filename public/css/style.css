@@ -912,6 +912,16 @@ p {
     background-size: cover;
 }
 
+.tw-icon{
+    background: url("/public/images/ico/twitter-2.png") 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.g-icon{
+    background: url("/public/images/ico/80-google-plus-512.png") 50% 50% no-repeat;
+    background-size: cover;
+}
+
 .toast{
     display: none;
     opacity: 0;

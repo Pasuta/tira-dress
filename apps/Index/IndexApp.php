@@ -52,7 +52,6 @@ class IndexApp extends WebApplication implements ApplicationFreeAccess {
         $m->action = 'load';
         $m->urn = 'urn-item';
         $m->last = 6;
-        $m->accessory = false;
         $m->order = array('created'=>'desc');
         $last6 = $m->deliver();
         $last6 = $last6->toArray();

@@ -154,7 +154,7 @@ extract($this->context);
         <div class="row-fluid team">
             <div class="span6" id="first-person">
                 <div class="thumbnail" style='background: #b90077'>
-                    <img src="/public/images/g/tn1.jpg" alt="team 1">
+                    <img src="/public/images/g/tn3.jpg" alt="Татьяна Ковальчук" class="imgI">
                     <h3>Татьяна Ковальчук</h3>
                     <ul class="social">
                         <li>
@@ -167,7 +167,7 @@ extract($this->context);
             </div>
             <div class="span6" id="second-person">
                 <div class="thumbnail" style='background: #b90077'>
-                    <img src="/public/images/g/i.jpg" alt="team 1">
+                    <img src="/public/images/g/i.jpg" alt="Ирина Довгань" class="imgI">
                     <h3>Ирина Довгань</h3>
                     <ul class="social">
                         <li>
@@ -349,6 +349,12 @@ extract($this->context);
                             </li>
                             <li>
                                 <a class="mIc in-icon" href="https://instagram.com/tirashowroom/"></a>
+                            </li>
+                            <li>
+                                <a class="mIc tw-icon" href="https://twitter.com/tirashowroom/"></a>
+                            </li>
+                            <li>
+                                <a class="mIc g-icon" href="https://plus.google.com/117015844931846090909"></a>
                             </li>
                         </ul>
                     </div>
