@@ -301,41 +301,9 @@ extract($this->context);
         
         <div class="container">
             <div class="row-fluid">
-                <div class="span6 contact-form centered">
-                    <h3>Оставьте ваш вопросик!</h3>
-                    <div id="successSend" class="alert alert-success invisible">
-                        <strong>Well done!</strong>Your message has been sent.</div>
-                    <div id="errorSend" class="alert alert-error invisible">There was an error.</div>
-                    <form id="contact-form" class="commentForm ajaxForm" data-type="question">
-                        <div class="control-group">
-                            <div class="controls">
-                                <input class="span12" type="text" id="name" name="name" placeholder="* Ваше имя..." />
-                                <div class="error left-align" id="err-name">Please enter name.</div>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="controls">
-                                <input class="span12" type="email" name="email" id="email" placeholder="* Ваш email..." />
-                                <div class="error left-align" id="err-email">Please enter valid email adress.</div>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="controls">
-                                <textarea class="span12" name="text" id="comment" placeholder="* Комментарий..."></textarea>
-                                <div class="error left-align" id="err-comment">Please enter your comment.</div>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="controls">
-                                <button id="send-mail" class="message-btn">Отправить ваше сообщение</button>
-                            </div>
-                        </div>
-                        <div id="questionDiv"></div>
-                    </form>
-                </div>
-                <div class="span6 contact-form centered">
+                <div class="span12 contact-form centered">
                     <p>ул. Антоновича (Горького), 48Б, офис 1</p>
-                    <p>050-2000-103</p>
+                    <p><a href="tel:‎+380502000103">‎+380502000103</a></p>
                     <div class="title">
                         <h3>Мы в социальных сетях</h3>
                     </div>
