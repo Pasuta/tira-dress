@@ -5,7 +5,7 @@
     <div class="triangle"></div>
     <div class="container">
         <div class=" title">
-            <h1>Наши колекции</h1>
+            <h1>Наши коллекции</h1>
             <p>Эксклюзивная свадебная коллекция лето-осень 2017 нашего бренда TIRA BRIDAL</p>
         </div>
 
