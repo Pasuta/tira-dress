@@ -106,7 +106,7 @@ extract($this->context);
     <div class="triangle"></div>
     <div class="container">
         <div class=" title">
-            <h1>Наши колекции</h1>
+            <h1>Наши коллекции</h1>
 <!--            <p>Тут будет небольшой текст, но его можно и не выводить, тут уж как сами девули хотите</p>-->
             <a href="/catalog">Перейти ко всем коллекциям</a>
         </div>
@@ -298,10 +298,7 @@ extract($this->context);
                 <h1>Наши контакты</h1>
             </div>
         </div>
-        <div class="map-wrapper">
-            <div class="map-canvas" id="map-canvas">Загружаю карту...</div>
-
-        </div>
+        
         <div class="container">
             <div class="row-fluid">
                 <div class="span6 contact-form centered">
@@ -363,6 +360,11 @@ extract($this->context);
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="map-wrapper">
+            <div class="map-canvas" id="map-canvas">Загружаю карту...</div>
+
         </div>
     </div>
 </div>
