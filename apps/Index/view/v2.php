@@ -83,7 +83,7 @@ extract($this->context);
                     $m->action = 'load';
                     $m->urn = $c['urn'];
                     $o = $m->deliver();
-                    $src = $o->mainphotov ? $o->mainphotov->thumb->uri : "/public/images/logo/Tira_logo03.jpg";
+                    $src = $o->mainphoto ? $o->mainphoto->thumb->uri : "/public/images/logo/Tira_logo03.jpg";
                     echo "
                             <li class='{$span} mix web'>
                                 <div class='thumbnail' style='background: white'>
