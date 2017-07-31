@@ -90,8 +90,7 @@ extract($this->context);
                                     <a href='/catalog/collection/{$o->uri}' rel='#slidingDiv{$slidingDiv}'>
                                         <img src='{$src}' alt='project {$i}'>
                                     </a>
-                                    <br>
-                                    <p style='color:black;text-transform: capitalize'>{$o->title}</p>
+                                    <h3 style='color:black;text-transform: capitalize;font-weight: 100'>{$o->title}</h3>
                                 </div>
                             </li>
                             ";
