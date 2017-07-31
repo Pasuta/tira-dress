@@ -1,0 +1,23 @@
+<?xml version='1.0' standalone='yes'?>
+
+<entity name="collection" uid="1248" manager="Taxonomy">
+
+    <passport>
+        <title>Коллекция</title>
+    </passport>
+    <states/>
+    <structure>
+        <field name="uri"/>
+        <field name="title"/>
+        <hasmany entity="item" />
+        <hasone entity="mainphoto" />
+    </structure>
+    <admincolumns>
+        <column selector="title"/>
+        <column selector="uri"/>
+    </admincolumns>
+
+    <options>
+        <aparam name="translit" value="legacytitle2uri"/>
+    </options>
+</entity>

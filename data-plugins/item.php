@@ -11,6 +11,7 @@ class ItemPlugin extends RowPlugin {
         $uri = $this->ROW->mainphoto->first()->image->uri;
         return "<div style='background: url({$uri}) 0 50% no-repeat;background-size: cover;width: 50px;height: 50px'></div>";
     }
+
     public function onephotov() {
         $uri = $this->ROW->mainphotov->image->uri;
         return "<div style='background: url({$uri}) 0 50% no-repeat;background-size: cover;width: 50px;height: 50px'></div>";

@@ -19,6 +19,7 @@
 		<field name="thumbnail" />
 		<belongsto entity="item" />
 		<belongsto entity="itemChildren" />
+		<belongsto entity="collection" />
 		<!--<belongsto entity="blog" />-->
 	</structure>
 

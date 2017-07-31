@@ -102,7 +102,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 	margin: 0 0.5em;
 }
 .header-login ul li a:hover {
-    color: #b90077;
+    color: #b50e7d;
 }
 .header-top {
     background-color: #2E2E2E;
@@ -165,11 +165,11 @@ div#bs-megadropdown-tabs {
     margin-left: 13.6%;
 }
 .nav > li > a:hover, .nav > li > a:focus {
-    background-color: #b90077;
+    background-color: #b50e7d;
     color: #fff;
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-  background-color: #b90077;
+  background-color: #b50e7d;
     color: #fff;
 }
 .col1 {
@@ -293,7 +293,7 @@ a.item_add {
 }
 .col-2 span{
 	font-size: 1.4em;
-    color: #b90077;
+    color: #b50e7d;
     line-height: 1.8em;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -309,7 +309,7 @@ a.item_add {
     color: #000000;
 }
 .col-2 h2 a:hover{
-    color: #b90077;
+    color: #b50e7d;
 }
 .col-2 p{
 	font-size: 0.9em;
@@ -319,9 +319,9 @@ a.item_add {
 }
  a.buy-now{
 	    font-size: 0.9em;
-    color: #b90077;
+    color: #b50e7d;
     text-decoration: none;
-    border-bottom: 2px solid #b90077;
+    border-bottom: 2px solid #b50e7d;
     padding: 0 0 0.5em;
     display: inline-block;
 }
@@ -352,7 +352,7 @@ a.buy-now:hover{
 	font-family: 'Oxygen-Bold';
 }
 .col-pic h5{
-	color:#b90077;
+	color:#b50e7d;
 	font-size:2em;
 	text-transform:uppercase;
 	font-family: 'Ubuntu-Bold';
@@ -378,7 +378,7 @@ a.buy-now:hover{
 	width:200px;
 	height:2px;
 	display:block;
-	background:#b90077;
+	background:#b50e7d;
 	border-radius:10px;
 	margin: 0.2em auto;
 }
@@ -387,7 +387,7 @@ a.buy-now:hover{
 }
  .mid-1 span{
 	font-size: 0.9em;
-    color: #b90077;
+    color: #b50e7d;
     line-height: 1.8em;
     font-family: 'Ubuntu-Bold';
 }
@@ -493,7 +493,7 @@ a.buy-now:hover{
 .b-from-left{
 	position:relative;
 	left:-100%;
-	    color: #b90077;
+	    color: #b50e7d;
     font-size: 2em;
     text-transform: uppercase;
     font-family: 'Ubuntu-Bold';
@@ -553,7 +553,7 @@ a.buy-now:hover{
     text-decoration:none;
 }
 .mid-1 h6 a:hover {
-    color: #b90077;
+    color: #b50e7d;
 }
 .mid-2 p{
 	float:left;
@@ -600,7 +600,7 @@ a.buy-now:hover{
 	width: 50px;
     height: 50px;
     display: inline-block;
-    background: #b90077;
+    background: #b50e7d;
 	color:#fff;
 	font-size:1.3em;
     margin: 0 0.3em;
@@ -608,7 +608,7 @@ a.buy-now:hover{
 }
 .zoom-icon .glyphicon-menu-right{
     background:#fff;
-	color: #b90077;
+	color: #b50e7d;
 }
 .mid-pop .zoom-icon {
 	top: 0px;
@@ -647,7 +647,7 @@ a.buy-now:hover{
 	margin-top:1em;
 }
 .banner-top h2 a{
-	color:#b90077;
+	color:#b50e7d;
 }
 .banner-top h2 label{
 	margin:0 0.4em;
@@ -754,7 +754,7 @@ a.cart:hover{
 h4.cate {
     font-family: 'Ubuntu-Regular';
     font-size: 1.7em;
-    color:#b90077;
+    color:#b50e7d;
 }
 
 ul.kid-menu{
@@ -778,7 +778,7 @@ ul.kid-menu{
 	    font-family: 'Oxygen-Bold';
 }
 .menu-drop > li > a:hover{
-	color:#b90077;
+	color:#b50e7d;
 }
 .menu-drop ul li a {	
 	width: 100%;
@@ -826,7 +826,7 @@ color: #B3B3B3;
     padding-bottom: 1em;
 }
 span.reducedfrom {
-	    color: #b90077;
+	    color: #b50e7d;
     font-size: 1.5em;
     font-family: 'Ubuntu-Bold';
     float: left;
@@ -851,7 +851,7 @@ p.quick_desc {
 	margin: 1em 0 2em;
 }
 span.actual {
-	color:#b90077;
+	color:#b50e7d;
 	font-size: 1em;
 	margin-right: 5%;
 }
@@ -941,7 +941,7 @@ span.actual {
   transition-property: transform;
   -webkit-transform-origin: 0 100%;
   transform-origin: 0 100%;
-  background-color: #b90077;
+  background-color: #b50e7d;
    color: #fff;
    padding: 0.5em 1em;
    font-size:1em;
@@ -990,7 +990,7 @@ ul.product-qty {
 }
 
 .wish-list li a {
-	color:#b90077;
+	color:#b50e7d;
 	font-size: 0.85em;
 	text-decoration: underline;
 }
@@ -1018,7 +1018,7 @@ ul.product-qty {
     border-bottom: 1px solid #EDEDED;
 }
 .tabs  li a:hover,.tabs  li.active a{
-	background:#b90077 !important;
+	background:#b50e7d !important;
 	color:#fff;
 }
 .tab-content {
@@ -1069,7 +1069,7 @@ nav.nav-sidebar {
 	padding: 0.5em 1em;
 }
 .login-mail i{
-	color: #b90077;
+	color: #b50e7d;
     font-size: 1em;
 }
 .login-mail input[type="text"],.login-mail input[type="password"]{
@@ -1231,7 +1231,7 @@ nav.nav-sidebar {
     margin:1em 0 0;
 }
 .address-grid i{
-	color:#b90077;
+	color:#b50e7d;
 	font-size:1em;
 	float: left;
 	margin: 0 5% 0 0;
@@ -1258,7 +1258,7 @@ nav.nav-sidebar {
 	color: #7c7c7c;
 }
 .address1 p a:hover{
-	color:#b90077;
+	color:#b50e7d;
 }
 .address-more h4{
 	color:#000;
@@ -1275,7 +1275,7 @@ nav.nav-sidebar {
 }
 .four h3{
 	font-size: 7em;
-    color: #b90077;
+    color: #b50e7d;
     font-family: 'Ubuntu-Regular';
 }
 .four p{
@@ -1318,7 +1318,7 @@ a.at-in {
 	font-family: 'Ubuntu-Regular';
 }
 .sed h5 a{
-    color: #b90077;
+    color: #b50e7d;
   	text-decoration:none;
 }
 .sed h5 a:hover{
@@ -1375,7 +1375,7 @@ a.at-in {
 }
 .wishlist p{
 	font-size:1.1em;
-	color:#b90077;
+	color:#b50e7d;
 	padding:0.8em 0 ;
 }
 /*--footer--*/
@@ -1418,7 +1418,7 @@ ul.in li a{
 	display:block;	 
 }
 ul.in li a:hover{
-	color:#b90077;
+	color:#b50e7d;
 }
 ul.tag-in li{
 	display:inline-block;
@@ -1434,8 +1434,8 @@ ul.tag-in li a{
     border-radius: 15px;	
 }
 ul.tag-in li a:hover{
-	color:#b90077;
-    border: 1px solid #b90077;	
+	color:#b50e7d;
+    border: 1px solid #b50e7d;
 }
 .footer-class a:hover{
 	color:#fff;
@@ -1454,7 +1454,7 @@ ul.tag-in li a:hover{
 .footer-middle-in input[type="submit"] {
     width: 100%;
     font-size: 1em;
-    background: #b90077;
+    background: #b50e7d;
     padding: 0.5em 1em;
     text-align: center;
     color: #fff;
@@ -1468,7 +1468,7 @@ ul.tag-in li a:hover{
 	-ms-transition: 0.5s all;
 }
 .footer-middle-in input[type="submit"]:hover {
-   color: #b90077;
+   color: #b50e7d;
     background: #fff;
 }
 .footer-bottom{
@@ -1481,7 +1481,7 @@ ul.tag-in li a:hover{
 	float:right;
 }
 .footer-class a{
-	color:#b90077;
+	color:#b50e7d;
 	text-decoration:none;
 }
 .footer-bottom-top{

@@ -88,6 +88,15 @@ class IndexApp extends WebApplication implements ApplicationFreeAccess {
         $blog = $m->deliver();
         $this->context['blog'] = $blog;
 
+        $m = new Message();
+        $m->action = 'load';
+        $m->urn = 'urn-collection';
+        $m->last = 6;
+        $m->order = array('created'=>'desc');
+        $collection = $m->deliver();
+        $collection = $collection->toArray();
+        $this->context['collection'] = $collection;
+
         $this->register_widget('metadata','metadata', array('url'=>true));
     }
 

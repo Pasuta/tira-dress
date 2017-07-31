@@ -8,7 +8,6 @@ extract($this->context);
     </span>
 </div>
 
-
 <header />
 
 <div id="home">
@@ -61,53 +60,10 @@ extract($this->context);
         </div>
     </div>
 </div>
-<!-- End home section -->
-<!-- Service section start -->
-<div class="section primary-section" id="service">
-    <div class="container">
-        <!-- Start title section -->
-        <div class="title">
-            <h1>Какие услуги мы предоставляем?</h1>
-        </div>
-        <div class="row-fluid">
-            <div class="span4">
-                <div class="centered service">
-                    <div class="circle-border zoom-in">
-                        <img class="img-circle" src="/img/tira/showroom-512.png" alt="service 1">
-                    </div>
-                    <h3>Шоурум</h3>
-                    <p class="w">У нас вы можете примерить любой свадебный наряд</p>
-                </div>
-            </div>
-            <div class="span4">
-                <div class="centered service">
-                    <div class="circle-border zoom-in">
-                        <img class="img-circle" src="/img/tira/needle.png" alt="service 2" />
-                    </div>
-                    <h3>Платья на пошив</h3>
-                    <p class="w">индивидуальный пошив свадебного или вечернего платья по Вашему эскизу</p>
-                </div>
-            </div>
-            <div class="span4">
-                <div class="centered service">
-                    <div class="circle-border zoom-in">
-                        <img class="img-circle" src="/img/tira/necklace-512.png" alt="service 3">
-                    </div>
-                    <h3>Аксессуары</h3>
-                    <p class="w">Мы создаём авторские украшения ручной работы под Ваш образ</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Service section end -->
-<!-- Portfolio section start -->
 <div class="section secondary-section " id="portfolio">
-    <div class="triangle"></div>
     <div class="container">
         <div class=" title">
             <h1>Наши коллекции</h1>
-<!--            <p>Тут будет небольшой текст, но его можно и не выводить, тут уж как сами девули хотите</p>-->
             <a href="/catalog">Перейти ко всем коллекциям</a>
         </div>
         <div id="single-project">
@@ -115,35 +71,35 @@ extract($this->context);
                 <?
                 $i = 0;
                 $slidingDiv = '';
-                foreach($last6 as $o) {
+                $length = count($collection);
+                $span = 'span4';
+                if ($length == 1) $span = 'span12';
+                if ($length == 2) $span = 'span6';
+
+                foreach($collection as $c) {
                     $i++;
                     if ($i != 1) $slidingDiv = $i;
                     $m = new Message();
                     $m->action = 'load';
-                    $m->urn = $o['urn'];
+                    $m->urn = $c['urn'];
                     $o = $m->deliver();
-                    if($o->mainphotov){
-                        $src = $o->mainphotov->thumb->uri;
-                        echo "
-                                <li class='span4 mix web'>
-                                    <div class='thumbnail' style='background: white'>
-                                        <a href='/catalog/{$o->uri}' rel='#slidingDiv{$slidingDiv}'>
-                                            <img src='{$src}' alt='project {$i}'>
-                                        </a>
-                                        <br>
-                                        <p style='color:black;text-transform: capitalize'>{$o->title}</p>
-                                        <p style='color:black'>Цену уточняйте по телефону</p>
-                                    </div>
-                                </li>
-                                ";
-                    }
+                    $src = $o->mainphotov ? $o->mainphotov->thumb->uri : "/public/images/logo/Tira_logo03.jpg";
+                    echo "
+                            <li class='{$span} mix web'>
+                                <div class='thumbnail' style='background: white'>
+                                    <a href='/catalog/collection/{$o->uri}' rel='#slidingDiv{$slidingDiv}'>
+                                        <img src='{$src}' alt='project {$i}'>
+                                    </a>
+                                    <br>
+                                    <p style='color:black;text-transform: capitalize'>{$o->title}</p>
+                                </div>
+                            </li>
+                            ";
                 }?>
             </ul>
         </div>
     </div>
 </div>
-<!-- Portfolio section end -->
-<!-- About us section start -->
 <div class="section primary-section" id="about">
     <div class="triangle"></div>
     <div class="container">
@@ -153,7 +109,7 @@ extract($this->context);
         </div>
         <div class="row-fluid team">
             <div class="span6" id="first-person">
-                <div class="thumbnail" style='background: #b90077'>
+                <div class="thumbnail" style='background: #b50e7d'>
                     <img src="/public/images/g/tn3.jpg" alt="Татьяна Ковальчук" class="imgI">
                     <h3>Татьяна Ковальчук</h3>
                     <ul class="social">
@@ -166,7 +122,7 @@ extract($this->context);
                 </div>
             </div>
             <div class="span6" id="second-person">
-                <div class="thumbnail" style='background: #b90077'>
+                <div class="thumbnail" style='background: #b50e7d'>
                     <img src="/public/images/g/i.jpg" alt="Ирина Довгань" class="imgI">
                     <h3>Ирина Довгань</h3>
                     <ul class="social">
@@ -222,7 +178,43 @@ extract($this->context);
         </div>
     </div>
 </div>
-<!-- About us section end -->
+<div class="section primary-section" id="service">
+    <div class="container">
+        <!-- Start title section -->
+        <div class="title">
+            <h1>Какие услуги мы предоставляем?</h1>
+        </div>
+        <div class="row-fluid">
+            <div class="span4">
+                <div class="centered service">
+                    <div class="circle-border zoom-in">
+                        <img class="img-circle" src="/img/tira/showroom-512.png" alt="service 1">
+                    </div>
+                    <h3>Шоурум</h3>
+                    <p class="w">У нас вы можете примерить любой свадебный наряд</p>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="centered service">
+                    <div class="circle-border zoom-in">
+                        <img class="img-circle" src="/img/tira/needle.png" alt="service 2" />
+                    </div>
+                    <h3>Платья на пошив</h3>
+                    <p class="w">индивидуальный пошив свадебного или вечернего платья по Вашему эскизу</p>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="centered service">
+                    <div class="circle-border zoom-in">
+                        <img class="img-circle" src="/img/tira/necklace-512.png" alt="service 3">
+                    </div>
+                    <h3>Аксессуары</h3>
+                    <p class="w">Мы создаём авторские украшения ручной работы под Ваш образ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="section secondary-section">
     <div class="triangle"></div>
     <div class="container centered">
@@ -230,7 +222,6 @@ extract($this->context);
         <a href="/bonus" class="button">Получить скидку</a>
     </div>
 </div>
-<!-- Client section start -->
 <div id="clients">
     <div class="section primary-section">
         <div class="triangle"></div>
@@ -263,7 +254,6 @@ extract($this->context);
         </div>
     </div>
 </div>
-<!-- Newsletter section start -->
 <div class="section third-section">
     <div class="container newsletter">
         <div class="sub-section">
@@ -289,8 +279,6 @@ extract($this->context);
         </div>
     </div>
 </div>
-<!-- Newsletter section end -->
-<!-- Contact section start -->
 <div id="contact" class="contact">
     <div class="section secondary-section">
         <div class="container">

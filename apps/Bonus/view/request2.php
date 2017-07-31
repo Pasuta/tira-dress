@@ -88,7 +88,7 @@ extract($this->context);
                     </div>
                 </div>
 
-                <input type='submit' value='Отправить' style="padding: 5px 20px;background: #b90077;color: white; border:none;">
+                <input type='submit' value='Отправить' style="padding: 5px 20px;background: #b50e7d;color: white; border:none;">
             </form>
         </div>
     </div>

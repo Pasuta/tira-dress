@@ -33,6 +33,7 @@
     <hasmany entity="comment" />
     <hasmany entity="mainphoto" />
     <hasone entity="mainphotov" />
+    <belongsto entity="collection" />
 
   </structure>
 
@@ -41,6 +42,7 @@
   </defaultorder>
 
   <admincolumns>
+    <column selector="collection"/>
     <column selector="onephoto"/>
     <column selector="onephotov"/>
     <column selector="title"/>

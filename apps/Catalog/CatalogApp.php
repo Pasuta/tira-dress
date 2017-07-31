@@ -2,9 +2,58 @@
 
 class CatalogApp extends WebApplication implements ApplicationFreeAccess {
 
-    function request(){
+//    function request(){
+//
+//        $this->view = 'request';
+//        $this->register_widget('header', 'header', array(true, 'item', 'catalog'));
+//        $this->register_widget('footer', 'footer','item');
+//        $this->register_widget('pagetitle', 'pagetitle', array("title" => array('Каталог')));
+//
+//        $m = new Message();
+//        $m->action = 'load';
+//        $m->urn = 'urn-item';
+//        if ($_GET['price'] == 'high') $m->order = array('price'=>'desc');
+//        elseif ($_GET['price'] == 'low') $m->order = array('price'=>'asc');
+//        if ($_GET['created'] == 'high') $m->order = array('created'=>'desc');
+//        elseif ($_GET['created'] == 'low') $m->order = array('created'=>'asc');
+//        if ($_GET['countview'] == 'high') $m->order = array('countview'=>'desc');
+//        elseif ($_GET['countview'] == 'low') $m->order = array('countview'=>'asc');
+//        if ($_GET['rank'] == 'high') $m->order = array('rank'=>'desc');
+//        elseif ($_GET['rank'] == 'low') $m->order = array('rank'=>'asc');
+//        if ($_GET['instaff'] == '1') $m->instaff = 1;
+//        if ($_GET['toorder'] == '1') $m->toorder = 1;
+//        $item = $m->deliver();
+//        $this->context['item'] = $item;
+//
+//        $this->register_widget('metadata','metadata', array('url'=>true));
+//    }
 
-        $this->view = 'request';
+    function request(){
+        $this->view = 'collections';
+        $this->register_widget('header', 'header', array(true, 'item', 'catalog'));
+        $this->register_widget('footer', 'footer','item');
+        $this->register_widget('pagetitle', 'pagetitle', array("title" => array('Каталог')));
+        $m = new Message();
+        $m->action = 'load';
+        $m->urn = 'urn-collection';
+        $collection = $m->deliver();
+        $collection = $collection->toArray();
+        if(!count($collection)) $this->redirect('/page404');
+        $this->context['collection'] = $collection;
+
+        $this->register_widget('metadata','metadata', array('url'=>true));
+    }
+
+    function collection($uri) {
+        $m = new Message();
+        $m->action = 'load';
+        $m->urn = 'urn-collection';
+        $m->uri = $uri;
+        $collection = $m->deliver();
+        if(!count($collection)) $this->redirect('/page404');
+        $this->context['collection'] = $collection;
+
+        $this->view = 'collection';
         $this->register_widget('header', 'header', array(true, 'item', 'catalog'));
         $this->register_widget('footer', 'footer','item');
         $this->register_widget('pagetitle', 'pagetitle', array("title" => array('Каталог')));
@@ -12,6 +61,7 @@ class CatalogApp extends WebApplication implements ApplicationFreeAccess {
         $m = new Message();
         $m->action = 'load';
         $m->urn = 'urn-item';
+        $m->collection = $collection->urn;
         if ($_GET['price'] == 'high') $m->order = array('price'=>'desc');
         elseif ($_GET['price'] == 'low') $m->order = array('price'=>'asc');
         if ($_GET['created'] == 'high') $m->order = array('created'=>'desc');
@@ -26,6 +76,7 @@ class CatalogApp extends WebApplication implements ApplicationFreeAccess {
         $this->context['item'] = $item;
 
         $this->register_widget('metadata','metadata', array('url'=>true));
+
     }
 
     function resource($uri){
