@@ -9,7 +9,7 @@ extract($this->context);
     <div class="triangle"></div>
     <div class="container">
         <div class=" title">
-            <h1>Блог Тира</h1>
+            <h1>Блог TIRA Showroom</h1>
 <!--            <p>Тут будет небольшой текст, но его можно и не выводить, тут уж как сами девули хотите</p>-->
         </div>
         <div id="single-project">
