@@ -7,9 +7,11 @@
   <structure>
 
     <states>
+      <status name="active" />
     </states>
 
     <field name="text"/>
+    <field name="email"/>
     <field name="name"/>
     <field name="created"/>
     <field name="updated"/>

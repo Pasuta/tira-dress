@@ -65,6 +65,24 @@ class AjaxControl extends AjaxApplication implements ApplicationFreeAccess
 
         return $question;
     }
+
+    function review() {
+        $p = $this->message;
+
+        $m = new Message();
+        $m->urn = 'urn-review';
+        $m->action = "create";
+        $m->active = false;
+        if($p->name) $m->name = $p->name;
+        if($p->text) $m->text = $p->text;
+        if($p->email) $m->email = $p->email;
+        $review = $m->deliver();
+
+        Mail::send(SITE_NAME, SITE_NAME, "tatka29@i.ua", SITE_NAME, 'Вопрос', $review);
+//        Mail::send(SITE_NAME, SITE_NAME, "Pasuta_V@ukr.net", SITE_NAME, 'Кто то оставил отзыв', $review);
+
+        return $review;
+    }
 }
 
 ?>

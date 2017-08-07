@@ -10,11 +10,12 @@ class IndexApp extends WebApplication implements ApplicationFreeAccess {
 
         $m = new Message();
         $m->action = 'load';
-        $m->urn = 'urn-comment';
+        $m->urn = 'urn-review';
         $m->last = 3;
+        $m->active = true;
         $m->order = array('created'=>'desc');
-        $comment = $m->deliver();
-        $this->context['comment'] = $comment;
+        $review = $m->deliver();
+        $this->context['review'] = $review;
 
         $m = new Message();
         $m->action = 'load';
