@@ -81,7 +81,7 @@ define('DEBUG_LISTDB', true);
 PAYMENTS
 */
 
-
+//Спасибо Тане за игры в клубе на 30 школе в приставку sony playstation 1
 define('SIMPLEPASSWORDS', true);
 
 

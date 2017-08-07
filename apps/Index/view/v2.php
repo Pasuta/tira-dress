@@ -252,6 +252,7 @@ extract($this->context);
             </div>
 
             <br>
+            <br>
             <div class="row">
                 <div class="span6 contact-form centered">
                     <h3>Оставьте ваш отзыв!</h3>
