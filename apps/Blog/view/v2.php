@@ -22,7 +22,7 @@ extract($this->context);
                     echo "
                             <li class='span4 mix web' style='height: 400px'>
                                 <div class='thumbnail' style='background: white'>
-                                    <a href='/blog/{$b->uri}?v=2'>
+                                    <a href='/blog/{$b->uri}'>
                                         <img src='{$src}' alt='project {$i}' style='max-height: 315px;'>
                                         <h3 style='color: black'>{$b->title}</h3>
                                     </a>
