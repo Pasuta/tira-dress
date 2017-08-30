@@ -173,17 +173,22 @@ class WebRequest
 		}
 		catch (NoAppException $e)
 		{
-			Log::error('No app at '.$URI, 'app');
-			if (LEGACY_URLS_CATCH_ALL === true) 
-			{
-				header("HTTP/1.0 301 Moved Permanently");
-				header('Location: /');
-			}
-			else
-			{
-				header("HTTP/1.0 404 Not Found");
-				print 'NoAppException <pre>'.$e.'</pre>';
-			}
+
+            header("HTTP/1.0 301 Moved Permanently");
+            header('Location: /page404');
+            exit(0);
+
+//			Log::error('No app at '.$URI, 'app');
+//			if (LEGACY_URLS_CATCH_ALL === true)
+//			{
+//				header("HTTP/1.0 301 Moved Permanently");
+//				header('Location: /');
+//			}
+//			else
+//			{
+//				header("HTTP/1.0 404 Not Found");
+//				print 'NoAppException <pre>'.$e.'</pre>';
+//			}
 			
 		}
 		catch (NoResourceException $e)

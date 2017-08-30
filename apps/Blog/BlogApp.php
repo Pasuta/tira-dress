@@ -7,7 +7,6 @@ class BlogApp extends WebApplication implements ApplicationFreeAccess {
     }
 
     function request(){
-        $this->view = 'v2';
         $this->register_widget('header','header',array(true,'blog'));
         $this->register_widget('footer','footer',false);
 
@@ -23,7 +22,6 @@ class BlogApp extends WebApplication implements ApplicationFreeAccess {
 
 
     function resource($uri){
-        $this->view = 'v3';
         $this->register_widget('header','header',array(false,'blog'));
         $this->register_widget('footer','footer',false);
 
