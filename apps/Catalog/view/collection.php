@@ -18,7 +18,7 @@
                 <?
                 foreach($item as $i){
                     $src = $i->mainphotov->image->uri;
-                    $price = $i->price ? $i->price : "Цену уточняйте по телефону";
+                    $price = $i->price ? $i->price . " Грн" : "Цену уточняйте по телефону";
                     echo "
                         <li class='span4 mix web' style='height: 550px'>
                             <div class='thumbnail' style='background: white'>
