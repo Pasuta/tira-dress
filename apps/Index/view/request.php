@@ -35,7 +35,9 @@ extract($this->context);
                     $m->action = 'load';
                     $m->urn = $c['urn'];
                     $o = $m->deliver();
+//                    $a = ["/public/images/1.jpg", "/public/images/10.jpg", "/public/images/logo/Oracal_150x100.jpg", "/public/images/logo/Tira_logo04.jpg"];
                     $src = $o->mainphoto ? $o->mainphoto->image->uri : "/public/images/logo/Tira_logo03.jpg";
+//                    $src = $a[rand(0, 3)];
                     echo "
                             <li class='{$span} mix web'>
                                 <div class='thumbnail' style='background: white;height: 605px'>

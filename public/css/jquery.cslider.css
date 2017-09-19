@@ -1346,10 +1346,5 @@
     border-radius: 100%;
 }
 .centerImg{
-    position: absolute;
-    margin: auto;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
+    vertical-align: middle;
 }
