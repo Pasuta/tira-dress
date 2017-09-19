@@ -27,4 +27,6 @@ $GLOBALS['CONFIG']['FIELD'][1039] = new FieldMeta(  array( "uid" => "1038", "nam
 $GLOBALS['CONFIG']['FIELD'][1040] = new FieldMeta(  array( "uid" => "1040", "name" => "fata", "title" => "Фата", "type" => "string")  );
 $GLOBALS['CONFIG']['FIELD'][1041] = new FieldMeta(  array( "uid" => "1041", "name" => "ready", "title" => "Пошив или готовое", "type" => "string")  );
 $GLOBALS['CONFIG']['FIELD'][1042] = new FieldMeta(  array( "uid" => "1042", "name" => "dresscolor", "title" => "Цвет платья", "type" => "string")  );
+
+$GLOBALS['CONFIG']['FIELD'][1043] = new FieldMeta(  array( "uid" => "1043", "name" => "subtitle", "title" => "Подзаголовок", "type" => "string")  );
 ?>

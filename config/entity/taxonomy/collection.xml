@@ -9,6 +9,7 @@
     <structure>
         <field name="uri"/>
         <field name="title"/>
+        <field name="text"/>
         <hasmany entity="item" />
         <hasone entity="mainphoto" />
     </structure>

@@ -6,20 +6,17 @@
         <title>Категория</title>
     </passport>
 
-
     <structure>
-
-
+        <field name="uri"/>
+        <field name="title"/>
+        <hasmany entity="item" />
     </structure>
-
-
     <admincolumns>
-
+        <column selector="title"/>
+        <column selector="uri"/>
     </admincolumns>
 
-    <parameters>
-    </parameters>
-
     <options>
+        <aparam name="translit" value="legacytitle2uri"/>
     </options>
 </entity>

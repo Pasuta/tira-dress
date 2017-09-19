@@ -7,6 +7,7 @@
         <div class=" title">
             <h1>Наши коллекции</h1>
             <p>Эксклюзивные свадебные коллекции нашего бренда TIRA BRIDAL</p>
+<!--            <div></div>-->
         </div>
 
         <!-- Start details for portfolio project 1 -->

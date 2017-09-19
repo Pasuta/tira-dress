@@ -6,7 +6,8 @@
     <div class="container">
         <div class=" title">
             <h1><?=$collection->title?></h1>
-            <p>Эксклюзивная свадебная коллекция нашего бренда TIRA BRIDAL</p>
+<!--            <p>Эксклюзивная свадебная коллекция нашего бренда TIRA BRIDAL</p>-->
+            <div><?=$collection->text?></div>
         </div>
 
         <!-- Start details for portfolio project 1 -->
@@ -18,7 +19,6 @@
                 <?
                 foreach($item as $i){
                     $src = $i->mainphotov->image->uri;
-                    $price = $i->price ? $i->price . " Грн" : "Цену уточняйте по телефону";
                     echo "
                         <li class='span4 mix web' style='height: 550px'>
                             <div class='thumbnail' style='background: white'>
@@ -26,8 +26,9 @@
                                     <img src='{$src}' alt='project {$i}' style='height: 450px'>
                                 </a>
                                 <br>
+                                <br>
                                 <p style='color:black; text-transform: capitalize'>{$i->title}</p>
-                                <p style='color:black'>{$price}</p>
+                                <p style='color:black'>{$i->priceShow}</p>
                             </div>
                         </li>";
                 }

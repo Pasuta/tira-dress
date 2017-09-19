@@ -34,6 +34,21 @@ class ItemPlugin extends RowPlugin {
             break;
         }
         return $p;
+    }
 
+    public function disc() {
+        $d = $this->ROW->discount ? ($this->ROW->price / 100) * $this->ROW->discount : false;
+        if ($d) {
+          $d = round($d);
+        }
+        return $d;
+    }
+
+    public function priceShow() {
+        if (!$this->ROW->price) return "Цену уточняйте по телефону";
+        if ($this->ROW->price && $this->ROW->disc) {
+            return "<span style='text-decoration:line-through '>{$this->ROW->price} Грн</span> <b>{$this->ROW->disc} Грн</b>";
+        }
+        return $this->ROW->price . " Грн";
     }
 }

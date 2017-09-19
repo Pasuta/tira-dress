@@ -17,6 +17,7 @@
     <field name="title"/>
     <field name="uri"/>
     <field name="price"/>
+    <field name="discount"/>
     <field name="sizes"/>
     <field name="countview"/>
     <field name="text"/>
@@ -34,6 +35,7 @@
     <hasmany entity="mainphoto" />
     <hasone entity="mainphotov" />
     <belongsto entity="collection" />
+    <belongsto entity="category" />
 
   </structure>
 
@@ -43,13 +45,14 @@
 
   <admincolumns>
     <column selector="collection"/>
+    <column selector="category"/>
     <column selector="onephoto"/>
     <column selector="onephotov"/>
     <column selector="title"/>
     <column selector="uri"/>
-    <column selector="rank"/>
     <column selector="id"/>
     <column selector="price"/>
+    <column selector="discount"/>
   </admincolumns>
 
   <options>

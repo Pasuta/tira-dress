@@ -4,7 +4,6 @@ class IndexApp extends WebApplication implements ApplicationFreeAccess {
 
     function request(){
         $this->register_widget('header', 'header', array(true, false));
-        $this->register_widget('footer', 'footer', false);
         $this->register_widget('pagetitle', 'pagetitle', array("title"=> 'Главная'));
 
         $m = new Message();
@@ -96,6 +95,34 @@ class IndexApp extends WebApplication implements ApplicationFreeAccess {
         $collection = $m->deliver();
         $collection = $collection->toArray();
         $this->context['collection'] = $collection;
+
+        $m = new Message();
+        $m->action = 'load';
+        $m->urn = 'urn-text';
+        $m->uri = "O-nas";
+        $textAboutUs = $m->deliver();
+        $this->context['textAboutUs'] = $textAboutUs;
+
+        $m = new Message();
+        $m->action = 'load';
+        $m->urn = 'urn-text';
+        $m->uri = "Dobro-pojalovat-v-Tira-Bridal";
+        $welcome = $m->deliver();
+        $this->context['welcome'] = $welcome;
+
+        $m = new Message();
+        $m->action = 'load';
+        $m->urn = 'urn-text';
+        $m->uri = "Unikalnost";
+        $uniq = $m->deliver();
+        $this->context['uniq'] = $uniq;
+
+        $m = new Message();
+        $m->action = 'load';
+        $m->urn = 'urn-text';
+        $m->uri = "Individualnost";
+        $ind = $m->deliver();
+        $this->context['ind'] = $ind;
 
         $this->register_widget('metadata','metadata', array('url'=>true));
     }

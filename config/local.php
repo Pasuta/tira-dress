@@ -62,10 +62,10 @@ define('ENABLE_LISTDB', false);
 /**
 ENV
 */
-//define('ENV', 'DEVELOPMENT');
-define('ENV', 'PRODUCTION');
-// define('LOG_ENV', 'DEVELOPMENT');
- define('LOG_ENV', 'PRODUCTION');
+define('ENV', 'DEVELOPMENT');
+//define('ENV', 'PRODUCTION');
+ define('LOG_ENV', 'DEVELOPMENT');
+// define('LOG_ENV', 'PRODUCTION');
 
 //require __DIR__."env.php";
 

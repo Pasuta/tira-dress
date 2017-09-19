@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <metadata />
 
+    <link rel="stylesheet" href="/public/css/footer.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="/public/swiper/dist/css/swiper.min.css">
 
     <link href="/public/product/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -46,6 +49,9 @@
 </head>
     <body>
         <?echo $HTML;?>
+
+        <?include 'footer.php'?>
+
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 

@@ -45,8 +45,8 @@
                     <h3><?=$item->title?></h3>
                     <?if($item->material){ ?> <p class="in-para"> <?=$item->material?></p><?}?>
                     <div class="price_single">
-<!--                        <span class="reducedfrom item_price">--><?//=$item->price?><!-- у.е.</span>-->
-                        <span class="reducedfrom item_price">Цену уточняйте по телефону</span>
+                        <span class="reducedfrom item_price"><?=$item->priceShow?></span>
+<!--                        <span class="reducedfrom item_price">Цену уточняйте по телефону</span>-->
                         <div class="clearfix"></div>
                     </div>
                     <h4 class="quick">Краткое описание:</h4>

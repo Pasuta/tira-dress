@@ -10,56 +10,8 @@ extract($this->context);
 
 <header />
 
-<div id="home">
-    <!-- Start cSlider -->
-    <div id="da-slider" class="da-slider">
-        <div class="triangle"></div>
-        <!-- mask elemet use for masking background image -->
-        <div class="mask"></div>
-        <!-- All slides centred in container element -->
-        <div class="container">
-            <!-- Start first slide -->
-            <div class="da-slide">
-                <h2 class="fittext2">Добро пожаловать в мир Tira!</h2>
-                <h4>TIRA BRIDAL!</h4>
-                <p>Эксклюзивная свадебная коллекция лето-осень 2017 нашего бренда TIRA BRIDAL</p>
-                <a href="#about" class="da-link button">Подробнее</a>
-<!--                <div class="da-img">-->
-<!--                    <img src="public/images/Slider01.png" alt="image01" width="320">-->
-<!--                </div>-->
-            </div>
-            <!-- End first slide -->
-            <!-- Start second slide -->
-            <div class="da-slide">
-                <h2>Уникальность!</h2>
-                <h4>Модные свадебные платья<br> от украинских дизайнеров!</h4>
-<!--                <p></p>-->
-                <a href="#about" class="da-link button">Подробнее</a>
-<!--                <div class="da-img">-->
-<!--                    <img src="public/images/Slider02.png" width="320" alt="image02">-->
-<!--                </div>-->
-            </div>
-            <!-- End second slide -->
-            <!-- Start third slide -->
-            <div class="da-slide">
-                <h2>Индивидуальность!</h2>
-                <h4>Индивидуальный пошив<br> свадебного платья</h4>
-<!--                <p></p>-->
-                <a href="#about" class="da-link button">Подробнее</a>
-<!--                <div class="da-img">-->
-<!--                    <img src="public/images/Slider03.png" width="320" alt="image03">-->
-<!--                </div>-->
-            </div>
-            <!-- Start third slide -->
-            <!-- Start cSlide navigation arrows -->
-            <div class="da-arrows">
-                <span class="da-arrows-prev"></span>
-                <span class="da-arrows-next"></span>
-            </div>
-            <!-- End cSlide navigation arrows -->
-        </div>
-    </div>
-</div>
+<?include 'slider.php'?>
+
 <div class="section secondary-section " id="portfolio">
     <div class="container">
         <div class=" title">
@@ -135,15 +87,16 @@ extract($this->context);
             </div>
         </div>
         <div class="about-text centered">
-            <p class="w">Мы сестры Татьяна и Ирина, решили отойти от классического представления невесты в пышном белом платье и создать
-                свою эксклюзивную коллекцию свадебных платьев.<p>
-            <p class="w">Мы - новый вектор в свадебной и вечерней моде, мы с удовольствием и комфортом подберем Ваш неповторимый свадебный образ.<p>
-            <p class="w">У нас представлены свадебные платья украинских производителей, наша собственная линия свадебных платьев TIRA Bridal и платья известных брендов.<p>
-            <p class="w">Мы любим творить красоту и дарить счастье молодоженам, поэтому 90% наших платьев - это эксклюзивные модели, которые Вы больше нигде не купите.<p>
-            <p class="w">Также мы разработали линию будуарных платьев для съёмки "утро невесты", чтобы ваш САМЫЙ долгожданный день удался!<p>
-            <p class="w">Мы ЗА индивидуальность - поэтому с радостью выслушаем все Ваши пожелания и подберем то, что нужно, или сошьем по вашему эскизу.<p>
-            <p class="w">   Ваша красота и улыбка в день свадьбы - самая большая награда для нас и, конечно же, не волнуйтесь,
-                у нас Вы сможете подобрать авторское украшение для волос и фату.</p>
+<!--            <p class="w">Мы сестры Татьяна и Ирина, решили отойти от классического представления невесты в пышном белом платье и создать-->
+<!--                свою эксклюзивную коллекцию свадебных платьев.<p>-->
+<!--            <p class="w">Мы - новый вектор в свадебной и вечерней моде, мы с удовольствием и комфортом подберем Ваш неповторимый свадебный образ.<p>-->
+<!--            <p class="w">У нас представлены свадебные платья украинских производителей, наша собственная линия свадебных платьев TIRA Bridal и платья известных брендов.<p>-->
+<!--            <p class="w">Мы любим творить красоту и дарить счастье молодоженам, поэтому 90% наших платьев - это эксклюзивные модели, которые Вы больше нигде не купите.<p>-->
+<!--            <p class="w">Также мы разработали линию будуарных платьев для съёмки "утро невесты", чтобы ваш САМЫЙ долгожданный день удался!<p>-->
+<!--            <p class="w">Мы ЗА индивидуальность - поэтому с радостью выслушаем все Ваши пожелания и подберем то, что нужно, или сошьем по вашему эскизу.<p>-->
+<!--            <p class="w">   Ваша красота и улыбка в день свадьбы - самая большая награда для нас и, конечно же, не волнуйтесь,-->
+<!--                у нас Вы сможете подобрать авторское украшение для волос и фату.</p>-->
+            <?= $textAboutUs->text ?>
         </div>
 <!--        <h3>Если ты:</h3>-->
         <div class="row-fluid" style="display: none;">
@@ -177,43 +130,9 @@ extract($this->context);
         </div>
     </div>
 </div>
-<div class="section primary-section" id="service">
-    <div class="container">
-        <!-- Start title section -->
-        <div class="title">
-            <h1>Какие услуги мы предоставляем?</h1>
-        </div>
-        <div class="row-fluid">
-            <div class="span4">
-                <div class="centered service">
-                    <div class="circle-border zoom-in">
-                        <img class="img-circle" src="/img/tira/showroom-512.png" alt="service 1">
-                    </div>
-                    <h3>Шоурум</h3>
-                    <p class="w">У нас вы можете примерить любой свадебный наряд</p>
-                </div>
-            </div>
-            <div class="span4">
-                <div class="centered service">
-                    <div class="circle-border zoom-in">
-                        <img class="img-circle" src="/img/tira/needle.png" alt="service 2" />
-                    </div>
-                    <h3>Платья на пошив</h3>
-                    <p class="w">индивидуальный пошив свадебного или вечернего платья по Вашему эскизу</p>
-                </div>
-            </div>
-            <div class="span4">
-                <div class="centered service">
-                    <div class="circle-border zoom-in">
-                        <img class="img-circle" src="/img/tira/necklace-512.png" alt="service 3">
-                    </div>
-                    <h3>Аксессуары</h3>
-                    <p class="w">Мы создаём авторские украшения ручной работы под Ваш образ</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
+<?include 'service.php'?>
+
 <div class="section secondary-section">
     <div class="triangle"></div>
     <div class="container centered">
