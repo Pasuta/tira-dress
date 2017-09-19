@@ -32,9 +32,9 @@
                     $src = $o->mainphoto ? $o->mainphoto->image->uri : "/public/images/logo/Tira_logo03.jpg";
                     echo "
                             <li class='{$span} mix web'>
-                                <div class='thumbnail' style='background: white'>
+                               <div class='thumbnail' style='background: white;height: 605px'>
                                     <a href='/catalog/collection/{$o->uri}' rel='#slidingDiv{$slidingDiv}'>
-                                        <img src='{$src}' alt='project {$i}'>
+                                        <img src='{$src}' alt='project {$i}' class='centerImg'>
                                     </a>
                                     <h3 style='color:black;text-transform: capitalize;font-weight: 100'>{$o->title}</h3>
                                 </div>
