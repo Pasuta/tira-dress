@@ -240,7 +240,8 @@ extract($this->context);
             <div class="row-fluid">
                 <div class="span12 contact-form centered">
                     <p>ул. Антоновича (Горького), 48Б, офис 1</p>
-                    <p><a href="tel:‎+380502000103">‎+380502000103</a></p>
+                    <p><a href="tel:‎+380502000103">‎+380 50 20 00 103</a></p>
+                    <p><a href="tel:‎+380505746782">‎+38‎0 50 57 46 782</a></p>
                     <div class="title">
                         <h3>Мы в социальных сетях</h3>
                     </div>
