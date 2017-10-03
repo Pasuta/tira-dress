@@ -28,7 +28,7 @@ class CatalogApp extends WebApplication implements ApplicationFreeAccess {
         $this->context['collection'] = $collection;
 
         $this->view = 'collection';
-        $this->register_widget('header', 'header', array(true, 'item', 'catalog'));
+        $this->register_widget('header', 'header', array(true, 'item', 'catalog', 'hide'));
         $this->register_widget('footer', 'footer','item');
         $this->register_widget('pagetitle', 'pagetitle', array("title" => array('Каталог')));
 
