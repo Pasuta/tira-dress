@@ -6,14 +6,10 @@
     <div class="container">
         <div class=" title">
             <h1><?=$collection->title?></h1>
-<!--            <p>Эксклюзивная свадебная коллекция нашего бренда TIRA BRIDAL</p>-->
-            <div><?=$collection->text?></div>
         </div>
 
-        <!-- Start details for portfolio project 1 -->
         <div id="single-project">
 
-            <!-- End details for portfolio project 9 -->
             <ul id="portfolio-grid" class="thumbnails row">
 
                 <?
@@ -35,6 +31,12 @@
                 ?>
 
             </ul>
+
+            <hr>
+
+            <br>
+            <div><?=$collection->text?></div>
+            <br>
         </div>
     </div>
 </div>
