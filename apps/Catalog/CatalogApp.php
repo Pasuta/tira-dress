@@ -28,7 +28,7 @@ class CatalogApp extends WebApplication implements ApplicationFreeAccess {
         $this->context['collection'] = $collection;
 
         $this->view = 'collection';
-        $this->register_widget('header', 'header', array(true, 'item', 'catalog', 'hide'));
+        $this->register_widget('header', 'header', array(true, 'item', 'catalog'));
         $this->register_widget('footer', 'footer','item');
         $this->register_widget('pagetitle', 'pagetitle', array("title" => array('Каталог')));
 
@@ -55,7 +55,7 @@ class CatalogApp extends WebApplication implements ApplicationFreeAccess {
 
     function resource($uri){
         $this->layout = 'product';
-        $this->register_widget('header','header',array(false,'item'));
+        $this->register_widget('header','header',array(false,'item', '', 'hide'));
         $this->register_widget('footer','footer','item');
 
         $m = new Message();
