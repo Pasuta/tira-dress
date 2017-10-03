@@ -9,7 +9,7 @@ class IndexApp extends WebApplication implements ApplicationFreeAccess {
         $m = new Message();
         $m->action = 'load';
         $m->urn = 'urn-review';
-        $m->last = 3;
+        $m->last = 6;
         $m->active = true;
         $m->order = array('created'=>'desc');
         $review = $m->deliver();

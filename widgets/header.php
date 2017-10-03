@@ -12,8 +12,8 @@ function widget_header($array) {
         $rank = $_GET['rank'] == 'low' ? "high" : "low";
         $rankI = $_GET['rank'] == 'low' ? "&uparrow;" : "&darr;";
     }
-    echo "
-        <div class='navbar'>
+
+    echo "<div class='navbar'>
             <div class='navbar-inner'>
                 <div class='container'>
                     <a href='/' class='brand'>
@@ -48,22 +48,7 @@ function widget_header($array) {
                     <!-- End main navigation -->
                 </div>
             </div>
-        </div>
-        
-        ";
-//    echo "
-//            <header class='FW peterriver headercont' {$m} id='top'>
-//                <div class='CW header'>
-//                    <a href='/' class='logo'>TIRA</a>";
-//                    foreach($links as $k=>$v){
-//                        $act = $k == $array[1] ? "style='background:#2C3E50'" : '';
-//                        echo "<a href='/$k' $act class='animatedFast'>$v</a>";
-//                    }
-//            echo   "<br class='clear'>
-//                </div>
-//            </header>
-//         ";
-//     }
+        </div>";
 }
 
 ?>
