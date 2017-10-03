@@ -3,7 +3,7 @@
 function widget_header($array) {
 
     $sortBlock = 'display:none';
-    if ($array[2] == 'catalog' && count($array) > 1) {
+    if ($array[2] == 'catalog' && count($array) >= 1) {
         $sortBlock = '';
         $price = $_GET['price'] == 'low' ? "high" : "low";
         $priceI = $_GET['price'] == 'low' ? "&uparrow;" : "&darr;";
