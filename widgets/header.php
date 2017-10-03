@@ -2,8 +2,9 @@
 
 function widget_header($array) {
 
+    print count($array);
     $sortBlock = 'display:none';
-    if ($array[2] == 'catalog' && count($array) >= 1) {
+    if ($array[2] == 'catalog' && count($array)) {
         $sortBlock = '';
         $price = $_GET['price'] == 'low' ? "high" : "low";
         $priceI = $_GET['price'] == 'low' ? "&uparrow;" : "&darr;";
