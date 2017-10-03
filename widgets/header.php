@@ -1,27 +1,18 @@
 <?php
 
-function widget_header($array)
-{
-    $m = $array[0] == true ? "style='margin-top: -18px'" : '';
-    $links = array(
-        'item?created=high'=>'КАТАЛОГ',
-        'itemChildren?created=high'=>'ДЕТЯМ',
-        'blog'=>'БЛОГ',
-        'review'=>'ОТЗЫВЫ',
-        'bonus'=>'БОНУСЫ',
-        'contact'=>'КОНТАКТЫ'
-    );
-        $sortBlock = 'display:none';
-        if ($array[2] == 'catalog') {
-            $sortBlock = '';
-            $price = $_GET['price'] == 'low' ? "high" : "low";
-            $priceI = $_GET['price'] == 'low' ? "&uparrow;" : "&darr;";
-            $created = $_GET['created'] == 'low' ? "high" : "low";
-            $createdI = $_GET['created'] == 'low' ? "&uparrow;" : "&darr;";
-            $rank = $_GET['rank'] == 'low' ? "high" : "low";
-            $rankI = $_GET['rank'] == 'low' ? "&uparrow;" : "&darr;";
-        }
-        echo "
+function widget_header($array) {
+
+    $sortBlock = 'display:none';
+    if ($array[2] == 'catalog' && count($array) > 1) {
+        $sortBlock = '';
+        $price = $_GET['price'] == 'low' ? "high" : "low";
+        $priceI = $_GET['price'] == 'low' ? "&uparrow;" : "&darr;";
+        $created = $_GET['created'] == 'low' ? "high" : "low";
+        $createdI = $_GET['created'] == 'low' ? "&uparrow;" : "&darr;";
+        $rank = $_GET['rank'] == 'low' ? "high" : "low";
+        $rankI = $_GET['rank'] == 'low' ? "&uparrow;" : "&darr;";
+    }
+    echo "
         <div class='navbar'>
             <div class='navbar-inner'>
                 <div class='container'>
