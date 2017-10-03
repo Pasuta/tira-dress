@@ -2,6 +2,7 @@
 
 function widget_header($array) {
 
+    println($array);
     $sortBlock = 'display:none';
     if ($array[2] == 'catalog' && $array[3] != 'hide') {
         $sortBlock = '';
