@@ -17,10 +17,10 @@
         <link rel="stylesheet" type="text/css" href="/public/css/tira-ie7.css"/>
         <![endif]-->
         <link rel="stylesheet" type="text/css" href="/public/css/jquery.cslider.css" />
-        <link rel="stylesheet" type="text/css" href="public/css/jquery.bxslider.css" />
-        <link rel="stylesheet" type="text/css" href="public/css/animate.css" />
+        <link rel="stylesheet" type="text/css" href="/public/css/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="/public/css/animate.css" />
 
-        <link rel="stylesheet" href="public/css/footer.css">
+        <link rel="stylesheet" href="/public/css/footer.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
         <!-- Fav and touch icons -->
