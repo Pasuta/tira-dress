@@ -6,6 +6,7 @@ $GLOBALS['CONFIG']['SITEMAP'][] = '{"uri": "blog", "app":"Blog" }';
 $GLOBALS['CONFIG']['SITEMAP'][] = '{"uri": "bonus", "app":"Bonus" }';
 $GLOBALS['CONFIG']['SITEMAP'][] = '{"uri": "page404", "app":"Page404" }';
 $GLOBALS['CONFIG']['SITEMAP'][] = '{"uri": "catalog", "app":"Catalog" }';
+$GLOBALS['CONFIG']['SITEMAP'][] = '{"uri": "review", "app":"Review" }';
 
 
 foreach ($GLOBALS['CONFIG']['SITEMAP'] as $k=>$n)
