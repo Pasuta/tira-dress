@@ -31,6 +31,20 @@ extract($this->context);
                             ";
                 }?>
             </ul>
+
+            <div class="title">
+                <h3 class="black">
+                    <?
+                    if ($pages > 1) {
+                        for($i = 0; $i < $pages; $i++) {
+                            $n = $i + 1;
+                            $c = $i == $page ? 'style="font-weight: bold"' : '';
+                            echo "<a href='/blog?page=$i' $c>&nbsp; $n &nbsp;</a>";
+                        }
+                    }
+                    ?>
+                </h3>
+            </div>
         </div>
     </div>
 </div>

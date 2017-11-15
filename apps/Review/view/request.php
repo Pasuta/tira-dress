@@ -39,7 +39,20 @@ extract($this->context);
                 }?>
 
             </div>
-
+            <br><br>
+            <div class="title">
+                <h3 class="black">
+                    <?
+                    if ($pages > 1) {
+                        for($i = 0; $i < $pages; $i++) {
+                            $n = $i + 1;
+                            $c = $i == $page ? 'style="font-weight: bold"' : '';
+                            echo "<a href='/review?page=$i' $c>&nbsp; $n &nbsp;</a>";
+                        }
+                    }
+                    ?>
+                </h3>
+            </div>
             <br>
             <br>
             <?include $_SERVER['DOCUMENT_ROOT'].'/apps/Index/view/addReview.php'?>

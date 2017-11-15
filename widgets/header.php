@@ -31,7 +31,7 @@ function widget_header($array) {
                             <li><a href='/#service'>Услуги</a></li>
                             <li><a href='/catalog'>Каталог</a></li>
                             <li><a href='/#about'>О нас</a></li>
-                            <li><a href='/#clients'>Отзывы</a></li>
+                            <li><a href='/review'>Отзывы</a></li>
                             <li><a href='/#contact'>Контакты</a></li>
                             <li><a href='/blog'>Блог</a></li>
                             <li><a href='/bonus'>Бонус</a></li>

@@ -14,8 +14,26 @@ class BlogApp extends WebApplication implements ApplicationFreeAccess {
         $m->action = 'load';
         $m->urn = 'urn-blog';
         $m->order = array('created'=>'desc');
+        $all = $m->deliver();
+
+        $perPage = 9;
+        $page = $_GET['page'] ? $_GET['page'] : 0;
+        $pages = ceil(count($all) / $perPage);
+        if ($page <= 0 || $page >= $pages) $page = 0;
+
+        $this->context['page'] = $page;
+
+        $page = $perPage * $page;
+
+        $m = new Message();
+        $m->action = 'load';
+        $m->urn = 'urn-blog';
+        $m->offset = $page;
+        $m->last = 9;
+        $m->order = array('created'=>'desc');
         $blog = $m->deliver();
         $this->context['blog'] = $blog;
+        $this->context['pages'] = $pages;
 
         $this->register_widget('metadata','metadata', array('url'=>true));
     }

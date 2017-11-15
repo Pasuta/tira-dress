@@ -491,11 +491,12 @@ p {
 
 .about-text {
     margin-top:30px;
+    color: white !important;
 }
 .about-text p {
     padding:0;
     font-size:16px;
-    color: white !i;
+    color: white !important;
 }
 /*********************************************************************
                         SKILLS BAR

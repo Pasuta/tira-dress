@@ -68,7 +68,7 @@ extract($this->context);
                     <ul class="social">
                         <li>
                             <a href="https://www.facebook.com/profile.php?id=100001799804600">
-                                <span class="icon-facebook-circled"></span>
+                                <span class="icon-facebook-circled" style="color:white"></span>
                             </a>
                         </li>
                     </ul>
@@ -81,7 +81,7 @@ extract($this->context);
                     <ul class="social">
                         <li>
                             <a href="https://www.facebook.com/irisha.dovgan">
-                                <span class="icon-facebook-circled"></span>
+                                <span class="icon-facebook-circled" style="color:white"></span>
                             </a>
                         </li>
                     </ul>
