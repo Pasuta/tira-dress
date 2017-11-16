@@ -38,13 +38,10 @@ function widget_header($array) {
                 <div class='container'>
                     <a href='/' class='brand'>
                         <img src='/public/images/logo/TIRA_Bridal_logo.svg' alt='Logo' />
-                        <!-- This is website logo -->
                     </a>
-                    <!-- Navigation button, visible on small resolution -->
                     <button type='button' class='btn btn-navbar' data-toggle='collapse' data-target='.nav-collapse'>
                         <i class='icon-menu'></i>
                     </button>
-                    <!-- Main navigation -->
                     <div class='nav-collapse collapse pull-right' id='nav'>
                         <ul class='nav' id='top-navigation'>
                             <li class='active'><a href='/'>Главная</a></li>
@@ -76,7 +73,6 @@ function widget_header($array) {
                             <li><a href='/catalog?rank={$rank}'>Популярность {$rankI}</a></li>
                         </ul>
                     </div>
-                    <!-- End main navigation -->
                 </div>
             </div>
         </div>";
