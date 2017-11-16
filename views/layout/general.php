@@ -9,19 +9,19 @@
         <!-- Load Roboto font -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <!-- Load css styles -->
-        <link rel="stylesheet" type="text/css" href="/public/css/bootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="/public/css/bootstrap-responsive.css" />
-        <link rel="stylesheet" type="text/css" href="/public/css/style.css" />
-        <link rel="stylesheet" type="text/css" href="/public/css/pluton.css" />
+        <link rel="stylesheet" type="text/css" href="/public/css/bootstrap.css?21" />
+        <link rel="stylesheet" type="text/css" href="/public/css/bootstrap-responsive.css?21" />
+        <link rel="stylesheet" type="text/css" href="/public/css/style.css?21?21" />
+        <link rel="stylesheet" type="text/css" href="/public/css/pluton.css?21" />
         <!--[if IE 7]>
-        <link rel="stylesheet" type="text/css" href="/public/css/tira-ie7.css"/>
+        <link rel="stylesheet" type="text/css" href="/public/css/tira-ie7.css?21"/>
         <![endif]-->
-        <link rel="stylesheet" type="text/css" href="/public/css/jquery.cslider.css" />
-        <link rel="stylesheet" type="text/css" href="/public/css/jquery.bxslider.css" />
-        <link rel="stylesheet" type="text/css" href="/public/css/animate.css" />
+        <link rel="stylesheet" type="text/css" href="/public/css/jquery.cslider.css?21" />
+        <link rel="stylesheet" type="text/css" href="/public/css/jquery.bxslider.css?21" />
+        <link rel="stylesheet" type="text/css" href="/public/css/animate.css?21" />
 
-        <link rel="stylesheet" href="/public/css/footer.css">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/public/css/footer.css?21">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css?21">
 
         <!-- Fav and touch icons -->
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/images/ico/apple-touch-icon-144.png">
