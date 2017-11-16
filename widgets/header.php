@@ -53,7 +53,7 @@ function widget_header($array) {
                                     <li>Категории</a></li>
                                     $categories
                                     <hr>
-                                    <li>Колекции</a></li>
+                                    <li>Коллекции</a></li>
                                     $collections
                                 </ul>
                             </li>
