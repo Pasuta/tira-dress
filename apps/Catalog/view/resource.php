@@ -49,8 +49,8 @@
 <!--                        <span class="reducedfrom item_price">Цену уточняйте по телефону</span>-->
                         <div class="clearfix"></div>
                     </div>
-                    <?if ($item->category){?><h4 class="quick">Категория: <?=$item->category->title?></h4><?}?>
-                    <?if ($item->collection){?><h4 class="quick">Коллекция: <?=$item->collection->title?></h4><?}?>
+                    <?if ($item->category){?><h4 class="quick">Категория: <b><?=$item->category->title?></b></h4><?}?>
+                    <?if ($item->collection){?><h4 class="quick">Коллекция: <b><?=$item->collection->title?></b></h4><?}?>
 
                     <h4 class="quick">Краткое описание:</h4>
                     <p class="quick_desc"> <?=$item->text?></p>
