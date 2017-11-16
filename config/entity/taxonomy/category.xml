@@ -10,6 +10,7 @@
         <field name="uri"/>
         <field name="title"/>
         <hasmany entity="item" />
+        <hasone entity="mainphoto" />
     </structure>
     <admincolumns>
         <column selector="title"/>

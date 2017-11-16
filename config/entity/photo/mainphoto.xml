@@ -20,6 +20,7 @@
 		<belongsto entity="item" />
 		<belongsto entity="itemChildren" />
 		<belongsto entity="collection" />
+		<belongsto entity="category" />
 		<!--<belongsto entity="blog" />-->
 	</structure>
 
