@@ -1015,6 +1015,9 @@ p {
 .uli a {
     color: white !important;
 }
+.uli a:hover {
+    color: darkblue !important;
+}
 
 @media only screen and ( max-width: 40em ) /* 640 */
 {
