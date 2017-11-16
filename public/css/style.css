@@ -967,6 +967,7 @@ p {
 #nav > a
 {
     display: none;
+    color: white !important;
 }
 #nav li
 {
@@ -1010,7 +1011,7 @@ p {
 }
 .uli li {
     margin: 10px;
-
+    color: white !important;
 }
 .uli a {
     color: white !important;
@@ -1027,13 +1028,11 @@ p {
     }
     #nav > a
     {
-        color:white !important;
     }
     #nav:not( :target ) > a:first-of-type,
     #nav:target > a:last-of-type
     {
         display: block;
-        color:white !important;
     }
 
     /* first level */
