@@ -1045,6 +1045,7 @@ p {
         position: absolute;
         left: 0;
         right: 0;
+        color:white !important;
     }
     #nav:target > ul
     {
@@ -1054,6 +1055,7 @@ p {
     {
         width: 100%;
         float: none;
+        color:white !important;
     }
 
     /* second level */
@@ -1061,6 +1063,9 @@ p {
     #nav li ul
     {
         position: static;
+        white-space: nowrap;
+        list-style-type: none;
+        color:white !important;
     }
     .uli a {
         color: white !important;
