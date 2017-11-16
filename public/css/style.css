@@ -1033,6 +1033,7 @@ p {
     #nav:target > a:last-of-type
     {
         display: block;
+        color:white !important;
     }
 
     /* first level */
