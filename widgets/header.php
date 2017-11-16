@@ -20,7 +20,7 @@ function widget_header($array) {
 
     $collections = '';
     foreach ($collection as $item) {
-        $collections .= "<li><a href='/catalog/collection/$item->uri'>&nbsp;&nbsp; $item->title</a></li>";
+        $collections .= "<li>&nbsp;&nbsp;<a href='/catalog/collection/$item->uri'>$item->title</a></li>";
     }
 
     $m = new Message();
@@ -30,7 +30,7 @@ function widget_header($array) {
 
     $categories = '';
     foreach ($category as $item) {
-        $categories .= "<li><a href='/catalog/category/$item->uri'>&nbsp;&nbsp; $item->title</a></li>";
+        $categories .= "<li>&nbsp;&nbsp;<a href='/catalog/category/$item->uri'>$item->title</a></li>";
     }
 
     echo "<div class='navbar'>
