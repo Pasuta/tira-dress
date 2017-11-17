@@ -46,14 +46,15 @@ function widget_header($array) {
                         <ul class='nav' id='top-navigation'>
                             <li class='active'><a href='/'>Главная</a></li>
                             <li><a href='/#service'>Услуги</a></li>
-                            <li>
-                                <a href='/catalog' aria-haspopup='true'>Каталог</a>
+                            <li class='upperUli'>
+                                <a href='/catalog' aria-haspopup='true' class='desktopView'>Каталог</a>
                                 <ul class='uli'>
+                                    <a href='/catalog' class='mobileView'>Каталог</a>
                                     <hr>
-                                    <li>Категории</a></li>
+                                    <li>Категории</li>
                                     $categories
                                     <hr>
-                                    <li>Коллекции</a></li>
+                                    <li>Коллекции</li>
                                     $collections
                                 </ul>
                             </li>

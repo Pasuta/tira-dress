@@ -1009,10 +1009,27 @@ p {
     transition: all 1s ease-in-out;
 }
 
+.mobileView {
+    display: none;
+}
+
 /* 640 */
 @media only screen and ( max-width: 40em ) {
     #nav li ul {
         list-style-type: none;
+    }
+    .uli {
+        display: none;
+    }
+    .upperUli:active > .uli, .upperUli:hover > .uli{
+        display: block;
+    }
+    .desktopView{
+        pointer-events: none;
+        cursor: default;
+    }
+    .mobileView {
+        display: block;
     }
     .uli a {
         color: white !important;
@@ -1021,15 +1038,4 @@ p {
         text-decoration: underline !important;
     }
 }
-
-Привет, обновления по Тире:
-- новая страница "Отзывы" с постраничностю и формой добавления нового отзыва
-- на главной странице сократил вывод отзывов до 3
-- на главной обновил иконки и поменял цвет шрифта
-- добавил постраничность на страницу блогов
-- добавил раздел "категории", добавил делении по категориям на странице каталогов
-- сделал выпадающее меню для каталога
-
-Проверьте все на айфоне. Для десктопной версии все работает норм.
-
 
