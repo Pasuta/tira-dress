@@ -27,7 +27,7 @@ extract($this->context);
 
                 <div class="control-group">
                     <div class="controls">
-                        <input type="text" class="span12" name="weddingdate" placeholder="Дата свадьбы (25.12.2017)">
+                        <input type="text" class="span12" name="weddingdate" placeholder="Дата свадьбы (25.12.2018)">
                         <div class="error left-align" id="err-email">Дата свадьбы</div>
                     </div>
                 </div>
@@ -93,4 +93,3 @@ extract($this->context);
         </div>
     </div>
 </div>
-

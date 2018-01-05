@@ -17,7 +17,7 @@
             <a href='/bonus'>Бонус</a>
         </p>
 
-        <p class="footer-company-name">Tirabridal &copy; 2017</p>
+        <p class="footer-company-name">Tirabridal &copy; 2018</p>
     </div>
 
     <div class="footer-center">

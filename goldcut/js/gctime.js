@@ -1,5 +1,5 @@
 	function pad(n) {return n<10 ? '0'+n : n.toString()}
-	
+
 	function dateFromUTC( dateAsString, ymdDelimiter )
 	{
 	  if (!ymdDelimiter) ymdDelimiter = '-';
@@ -17,14 +17,14 @@
 	  var offset = new Date().getTimezoneOffset();
 	  return Math.round(ts / 1000) + offset*60;
 	}
-	
+
 	function convertDateToUTC(date) { return new Date(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds()); }
-	
+
 	function currentTimestamp()
 	{
 		return Math.round(new Date().getTime() / 1000);
 	}
-	
+
 	function GCDateToTimestamp(gc)
 	{
 		var ts = new Date( Date.UTC(
@@ -45,7 +45,7 @@
 		return dateFromUTC(dateh);
 		return dateh;
 	}
-	
+
 	function timestampToYYYYMMDDHHMMSS(ts)
 	{
 		ts = parseInt(ts);
@@ -54,7 +54,7 @@
 		var seconds = date.getSeconds();
 		return timestampToYYYYMMDDHHMM(ts) + ':' + pad(seconds);
 	}
-	
+
 	function timestampToYYYYMMDDHHMM(ts)
 	{
 		ts = parseInt(ts);
@@ -68,10 +68,10 @@
 		var seconds = date.getSeconds();
 		var formattedDate = year + '-' + pad(month) + '-' + pad(day);
 		var formattedTime = pad(hours) + ':' + pad(minutes);
-		//var dateh = date.toUTCString();	
+		//var dateh = date.toUTCString();
 		return formattedDate + ' ' + formattedTime;
 	}
-	
+
 	function timestampToGCDate(ts)
 	{
 		ts = parseInt(ts);
@@ -85,8 +85,8 @@
 		var s = date.getSeconds();
 		return {'year': year, 'month': pad(month), 'day': pad(day), 'h': pad(h), 'm': pad(m), 's': pad(s)};
 	}
-	
-	
+
+
 	function htmlDateTimeSelect(ts, fname)
 	{
 		/**
@@ -98,14 +98,14 @@
 		show changed delta
 		in header to live clocks - server, client (if differ) + select clock as work time - server or client (display dates in php list, date selected)
 		onchange ts datasource change selects
-		
+
 		http://www.tigir.com/javascript_select.htm
 		*/
 		  dateo = timestampToGCDate(ts);
 	  	  //console.log(ts, dateo);
 	  	  var fnamecal = fname+'_cal';
 	  	  var calYear = new Element('select',{'class':'dateSelectYear dateSelect'});
-	  	  for (var i=2000; i<=2017;i++)
+	  	  for (var i=2000; i<=2019;i++)
 	  	  {
 	  	  	  jp = pad(i);
 			  var year = new Element('option',{'value':jp,'text':jp}).inject(calYear);
@@ -131,7 +131,7 @@
 	  	  	  jp = pad(i);
 			  var h = new Element('option',{'value':jp,'text':jp}).inject(calH);
 			  if (jp == dateo.h) h.selected = true;
-			  
+
 	  	  }
 	  	  var calM = new Element('select',{'class':'dateSelectM dateSelect'});
 	  	  for (var i=0; i<60;i++)
@@ -140,7 +140,7 @@
 			  var m = new Element('option',{'value':jp,'text':jp}).inject(calM);
 			  if (jp == dateo.m) m.selected = true;
 	  	  }
-	  	  
+
 	  	  var calDiv = document.id(fnamecal);
 	  	  calDiv.adopt(calYear);
 	  	  calDiv.adopt(calMon);
@@ -149,7 +149,7 @@
 	  	  calDiv.adopt(calH);
 	  	  calDiv.adopt(new Element('span',{'text':':'}));
 	  	  calDiv.adopt(calM);
-	  	  
+
 	  	  $$('#'+fnamecal+' .dateSelect').addEvent('change', function(o) {
 	  	  	//console.log(o.target.selectedIndex);
 		    var calDiv = o.target.getParent();
@@ -165,9 +165,9 @@
 		    tsds.set('value', newTS);
 		    //console.log('ts datasource new ',tsds);
 	  	  });
-	  	  
+
 	}
-	
+
 /*
 Date.prototype.toUTCArray= function(){
     var D= this;
@@ -182,11 +182,11 @@ Date.prototype.toISO= function(){
         tem= A[i];
         if(tem<10) A[i]= '0'+tem;
     }
-    return A.splice(0, 3).join('-')+'T'+A.join(':');    
+    return A.splice(0, 3).join('-')+'T'+A.join(':');
 }
 */
-	
-	
+
+
 /*
     // @jstz.min.js
     console.log(timezone);
@@ -196,20 +196,20 @@ Date.prototype.toISO= function(){
 	var timezoneName = timezone.name();
 	var timezoneIsDST = timezone.dst();
 	*/
-	
+
 		/*
 	var hour = a.getUTCHours();
      var min = a.getUTCMinutes();
      var sec = a.getUTCSeconds();
      */
-     
-     
-     
+
+
+
      /*
 	var today = new Date();
 	console.log( today.getTimezoneOffset() );
 	console.log(today.toGMTString());
-	
+
 	unix_timestamp = 1323118901;
 	var date = new Date(unix_timestamp*1000);
 	var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -221,7 +221,7 @@ Date.prototype.toISO= function(){
 	var minutes = date.getMinutes();
 	var seconds = date.getSeconds();
 	var formattedTime = pad(hours) + ':' + pad(minutes);
-	var formattedDate = year + '-' + pad(month) + '-' + pad(day); 
+	var formattedDate = year + '-' + pad(month) + '-' + pad(day);
 	console.log(formattedDate);
 	console.log(formattedTime);
 	*/
