@@ -4,8 +4,9 @@
 
     <head>
         <meta charset=utf-8>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="google-site-verification" content="NRC0hSQhEe4u4Cplp__65Rs13k_SSCmMa9NOs7wcebY" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title><pagetitle /></title>
         <metadata />
         <!-- Load Roboto font -->
