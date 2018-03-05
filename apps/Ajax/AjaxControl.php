@@ -79,7 +79,7 @@ class AjaxControl extends AjaxApplication implements ApplicationFreeAccess
         if($p->email) $m->email = $p->email;
         $review = $m->deliver();
 
-        $message = "Новый отзыв. {$p->name} {$p->email}: '${$p->text}'";
+        $message = "Новый отзыв. {$p->name} {$p->email}: {$p->text}";
 
         Mail::send(SITE_NAME, SITE_NAME, "tatka29@i.ua", SITE_NAME, 'Вопрос', $message);
 //        Mail::send(SITE_NAME, SITE_NAME, "Pasuta_V@ukr.net", SITE_NAME, 'Кто то оставил отзыв', $review);
