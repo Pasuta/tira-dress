@@ -41,7 +41,7 @@ extract($this->context);
                     echo "
                             <li class='{$span} mix web'>
                                 <div class='thumbnail' style='background: white;height: 605px'>
-                                    <a href='/catalog/collection/{$o->uri}' rel='#slidingDiv{$slidingDiv}'>
+                                    <a href='/catalog/collection/{$o->uri}'>
                                         <img src='{$src}' alt='project {$i}' class='centerImg'>
                                     </a>
                                     <h3 style='color:black;text-transform: capitalize;font-weight: 100'>{$o->title}</h3>
