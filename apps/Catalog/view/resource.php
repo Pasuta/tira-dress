@@ -53,7 +53,7 @@
                     <?if ($item->collection){?><h4 class="quick">Коллекция: <b><?=$item->collection->title?></b></h4><?}?>
 
                     <h4 class="quick">Краткое описание:</h4>
-                    <p class="quick_desc"> <?=$item->text?></p>
+                    <div> class="quick_desc"> <?=$item->text?></div>
                     <br>
                     <h4 class="quick">Размеры:</h4>
                     <div class="quick_desc"> <?=$item->sizes?></div>
@@ -195,7 +195,7 @@
     </div>
 </div>
 
-<script type="text/javascript">
+<script>
     $(function() {
         var menu_ul = $('.menu-drop > li > ul'),
             menu_a  = $('.menu-drop > li > a');

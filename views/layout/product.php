@@ -20,7 +20,7 @@
     <script src="/public/product/js/jquery.min.js"></script>
 
     <script src="/public/product/js/jstarbox.js"></script>
-    <link rel="stylesheet" href="/public/product/css/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="/public/product/css/jstarbox.css" type="text/css" media="screen" />
     <script>
         jQuery(function() {
             jQuery('.starbox').each(function() {
