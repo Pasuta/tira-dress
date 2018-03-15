@@ -5,7 +5,7 @@
     <div class="triangle"></div>
     <div class="container">
         <div class=" title">
-            <h1>Наши коллекции</h1>
+            <h2>Наши коллекции</h2>
             <p>Эксклюзивные свадебные коллекции нашего бренда TIRA BRIDAL</p>
         </div>
         <div id="single-project">
@@ -28,7 +28,7 @@
                     echo "
                             <li class='{$span} mix web'>
                                <div class='thumbnail' style='background: white;height: 605px'>
-                                    <a href='/catalog/collection/{$o->uri}' rel='#slidingDiv{$slidingDiv}'>
+                                    <a href='/catalog/collection/{$o->uri}'>
                                         <img src='{$src}' alt='project {$i}' class='centerImg'>
                                     </a>
                                     <h3 style='color:black;text-transform: capitalize;font-weight: 100'>{$o->title}</h3>
@@ -37,9 +37,13 @@
                             ";
                 }?>
 
-                <div class=" title">
-                    <h1>Наши Категории</h1>
-                </div>
+                <li>
+                  <li class='span12 mix web'>
+                     <div class='thumbnail' style='background: white;height: 100px'>
+                          <h3 style='color:black;text-transform: capitalize;font-weight: 100'>Наши категории</h3>
+                      </div>
+                  </li>
+                </li>
 
                 <?
                 $j = 0;
@@ -59,7 +63,7 @@
                     echo "
                             <li class='{$span} mix web'>
                                <div class='thumbnail' style='background: white;height: 605px'>
-                                    <a href='/catalog/category/{$o->uri}' rel='#slidingDiv{$slidingDiv}'>
+                                    <a href='/catalog/category/{$o->uri}'>
                                         <img src='{$src}' alt='project {$j}' class='centerImg'>
                                     </a>
                                     <h3 style='color:black;text-transform: capitalize;font-weight: 100'>{$o->title}</h3>
