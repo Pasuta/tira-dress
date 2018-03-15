@@ -34,6 +34,11 @@
         <script src="/goldcut/js/gcdom.js?3"></script>
         <script src="/js/site.js?11"></script>
         <script src="/lib/js/when/when.js?12"></script>
+
+        <!-- /Yandex.Metrika counter -->
+    </head>
+    <body>
+
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -73,10 +78,7 @@
             })(document, window, "yandex_metrika_callbacks");
         </script>
         <noscript><div><img src="https://mc.yandex.ru/watch/45288684" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-        <!-- /Yandex.Metrika counter -->
-    </head>
 
-    <body>
         <?echo $HTML;?>
 
         <?include 'footer.php'?>

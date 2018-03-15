@@ -52,11 +52,9 @@ function widget_header($array) {
                                     <li>
                                       <a href='/catalog' class='mobileView'>Каталог</a>
                                     </li>
-                                    <hr>
-                                    <li>Категории</li>
+                                    <li><b>Категории</b></li>
                                     $categories
-                                    <hr>
-                                    <li>Коллекции</li>
+                                    <li><b>Коллекции</b></li>
                                     $collections
                                 </ul>
                             </li>

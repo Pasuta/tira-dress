@@ -203,7 +203,7 @@ extract($this->context);
                 <h1>Наши контакты</h1>
             </div>
         </div>
-        
+
         <div class="container">
             <div class="row-fluid">
                 <div class="span12 contact-form centered">
@@ -242,10 +242,10 @@ extract($this->context);
         </div>
     </div>
 </div>
-<script async="" defer="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initializeMap&key=AIzaSyBq1-XZVkXqK-pwgiIZGMThae5er4SgBYo"></script>
+<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initializeMap&key=AIzaSyBq1-XZVkXqK-pwgiIZGMThae5er4SgBYo"></script>
 <script>
     leaveComment();
 //    ajaxForm();
     subscribe();
 </script>
-<script type="text/javascript" src="/public/js/app.js"></script>
+<script src="/public/js/app.js"></script>
