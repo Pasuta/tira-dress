@@ -56,7 +56,7 @@
                     <p class="quick_desc"> <?=$item->text?></p>
                     <br>
                     <h4 class="quick">Размеры:</h4>
-                    <p class="quick_desc"> <?=$item->sizes?></p>
+                    <div class="quick_desc"> <?=$item->sizes?></div>
                     <br>
                     <div class="wish-list">
                         <div class="stars">

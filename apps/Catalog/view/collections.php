@@ -37,12 +37,10 @@
                             ";
                 }?>
 
-                <li>
-                  <li class='span12 mix web'>
-                     <div class='thumbnail' style='background: white;height: 100px'>
-                          <h3 style='color:black;text-transform: capitalize;font-weight: 100'>Наши категории</h3>
-                      </div>
-                  </li>
+                <li class='span12 mix web'>
+                   <div class='thumbnail' style='background: white;height: 100px'>
+                        <h3 style='color:black;text-transform: capitalize;font-weight: 100'>Наши категории</h3>
+                    </div>
                 </li>
 
                 <?

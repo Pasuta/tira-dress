@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="ru">
     <meta charset=utf-8>
     <title><pagetitle /></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
@@ -12,18 +12,16 @@
     <link rel="stylesheet" href="/public/swiper/dist/css/swiper.min.css">
 
     <link href="/public/product/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- Custom Theme files -->
-    <!--theme-style-->
+
     <link href="/public/product/css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <!--//theme-style-->
-    <!--theme-style-->
+
     <link href="/public/product/css/style4.css" rel="stylesheet" type="text/css" media="all" />
-    <!--//theme-style-->
+
     <script src="/public/product/js/jquery.min.js"></script>
-    <!--- start-rate---->
+
     <script src="/public/product/js/jstarbox.js"></script>
     <link rel="stylesheet" href="/public/product/css/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
-    <script type="text/javascript">
+    <script>
         jQuery(function() {
             jQuery('.starbox').each(function() {
                 var starbox = jQuery(this);
