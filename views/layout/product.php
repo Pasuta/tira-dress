@@ -42,7 +42,6 @@
             });
         });
     </script>
-    <!---//End-rate---->
     <link href="/public/product/css/form.css" rel="stylesheet" type="text/css" media="all" />
 </head>
     <body>
