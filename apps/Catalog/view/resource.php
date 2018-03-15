@@ -53,7 +53,7 @@
                     <?if ($item->collection){?><h4 class="quick">Коллекция: <b><?=$item->collection->title?></b></h4><?}?>
 
                     <h4 class="quick">Краткое описание:</h4>
-                    <div> class="quick_desc"> <?=$item->text?></div>
+                    <div class="quick_desc"> <?=$item->text?></div>
                     <br>
                     <h4 class="quick">Размеры:</h4>
                     <div class="quick_desc"> <?=$item->sizes?></div>
