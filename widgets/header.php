@@ -49,7 +49,9 @@ function widget_header($array) {
                             <li class='upperUli'>
                                 <a href='/catalog' aria-haspopup='true' class='desktopView'>Каталог</a>
                                 <ul class='uli'>
-                                    <a href='/catalog' class='mobileView'>Каталог</a>
+                                    <li>
+                                      <a href='/catalog' class='mobileView'>Каталог</a>
+                                    </li>
                                     <hr>
                                     <li>Категории</li>
                                     $categories
@@ -58,7 +60,7 @@ function widget_header($array) {
                                     $collections
                                 </ul>
                             </li>
-                            
+
                             <li><a href='/#about'>О нас</a></li>
                             <li><a href='/review'>Отзывы</a></li>
                             <li><a href='/#contact'>Контакты</a></li>
@@ -67,7 +69,7 @@ function widget_header($array) {
                         </ul>
                     </div>
                     <div class='nav-collapse collapse pull-right' style='{$sortBlock}'>
-                        <ul class='nav' id='top-navigation'>
+                        <ul class='nav'>
                             <li><a href='/catalog'>Сортировать:</a></li>
                             <li><a href='/catalog?price={$price}'>Цена {$priceI}</a></li>
                             <li><a href='/catalog?created={$created}'>Дата добавления {$createdI}</a></li>

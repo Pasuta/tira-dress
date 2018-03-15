@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
-
+<html lang="ru">
     <head>
         <meta charset=utf-8>
         <meta name="google-site-verification" content="NRC0hSQhEe4u4Cplp__65Rs13k_SSCmMa9NOs7wcebY" />
@@ -33,9 +31,9 @@
         <link rel="apple-touch-icon-precomposed" href="/public/images/ico/apple-touch-icon-57.png">
         <link rel="shortcut icon" href="/public/images/ico/favicon.ico">
 
-        <script type="text/javascript" src="/goldcut/js/gcdom.js?3"></script>
-        <script type="text/javascript" src="/js/site.js?11"></script>
-        <script type="text/javascript" src="/lib/js/when/when.js?12"></script>
+        <script src="/goldcut/js/gcdom.js?3"></script>
+        <script src="/js/site.js?11"></script>
+        <script src="/lib/js/when/when.js?12"></script>
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -47,7 +45,7 @@
 
         </script>
         <!-- Yandex.Metrika counter -->
-        <script type="text/javascript" nonce="">
+        <script  nonce="">
             (function (d, w, c) {
                 (w[c] = w[c] || []).push(function() {
                     try {
@@ -76,7 +74,6 @@
         </script>
         <noscript><div><img src="https://mc.yandex.ru/watch/45288684" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
         <!-- /Yandex.Metrika counter -->
-
     </head>
 
     <body>
@@ -94,19 +91,19 @@
         <!-- ScrollUp button end -->
         <!-- Include javascript -->
         <script src="/public/js/jquery.js"></script>
-        <script type="text/javascript" src="/public/js/jquery.mixitup.js"></script>
-        <script type="text/javascript" src="/public/js/bootstrap.js"></script>
-        <script type="text/javascript" src="/public/js/modernizr.custom.js"></script>
-        <script type="text/javascript" src="/public/js/jquery.bxslider.js"></script>
-        <script type="text/javascript" src="/public/js/jquery.cslider.js"></script>
-        <script type="text/javascript" src="/public/js/jquery.placeholder.js"></script>
-        <script type="text/javascript" src="/public/js/jquery.inview.js"></script>
+        <script  src="/public/js/jquery.mixitup.js"></script>
+        <script  src="/public/js/bootstrap.js"></script>
+        <script  src="/public/js/modernizr.custom.js"></script>
+        <script  src="/public/js/jquery.bxslider.js"></script>
+        <script  src="/public/js/jquery.cslider.js"></script>
+        <script  src="/public/js/jquery.placeholder.js"></script>
+        <script  src="/public/js/jquery.inview.js"></script>
         <!-- Load google maps api and call initializeMap function defined in app.js -->
         <!-- css3-mediaqueries.js for IE8 or older -->
         <!--[if lt IE 9]>
         <script src="/public/js/respond.min.js"></script>
         <![endif]-->
-        <script type="text/javascript" src="/public/js/app.js"></script>
+        <script  src="/public/js/app.js"></script>
 
     </body>
 </html>

@@ -10,7 +10,7 @@
             <div class="da-slide">
                 <h2 class="fittext2"><?=$welcome->title?></h2>
                 <h4><?=$welcome->subtitle?></h4>
-                <p><?=$welcome->text?></p>
+                <?=$welcome->text?>
 <!--                <a href="#" class="da-link button">Read more</a>-->
                 <div class="da-img " >
                     <img src="/public/images/10.jpg" alt="image01" width="320" class="rounded">
@@ -21,7 +21,7 @@
             <div class="da-slide">
                 <h2 class="fittext2"><?=$uniq->title?></h2>
                 <h4><?=$uniq->subtitle?></h4>
-                <p><?=$uniq->text?></p>
+                <?=$uniq->text?>
 <!--                <a href="#" class="da-link button">Read more</a>-->
                 <div class="da-img">
                     <img src="/public/images/1.jpg" width="320" alt="image02" class="rounded">
@@ -32,7 +32,7 @@
             <div class="da-slide">
                 <h2 class="fittext2"><?=$ind->title?></h2>
                 <h4><?=$ind->subtitle?></h4>
-                <p><?=$ind->text?></p>
+                <?=$ind->text?>
 <!--                <a href="#" class="da-link button">Read more</a>-->
                 <div class="da-img">
                     <img src="/public/images/8.jpg" width="320" alt="image03" class="rounded">
